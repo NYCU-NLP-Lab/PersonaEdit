@@ -19,6 +19,8 @@ AlphaEdit/data/stats/
 
 data/private/
 data/clustered_train/*
+data/edit_sets/k3_s20/
+data/eval_sets/test/k3_s20/
 data/stats/*
 !data/splits/train/.gitkeep
 !data/splits/test/.gitkeep

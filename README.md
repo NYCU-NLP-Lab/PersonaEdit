@@ -137,5 +137,8 @@ ordinal_summary.json
 Print editing metrics:
 
 ```bash
-python summarize.py --dir_name AlphaEdit --runs run_XXX --no-output
+python scripts/summarize_editing.py --dir_name AlphaEdit --runs run_XXX --no-output
 ```
+
+# Acknowledgment
+Our code for editing is based on [AlphaEdit](https://github.com/jianghoucheng/AlphaEdit)
