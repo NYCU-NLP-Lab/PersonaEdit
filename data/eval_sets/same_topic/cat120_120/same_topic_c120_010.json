@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "QKEY": "c120_010",
+    "OWNAGE_1_W26": "nan",
+    "CREGION": "West",
+    "AGE": "65+",
+    "SEX": "Female",
+    "EDUCATION": "High school graduate",
+    "CITIZEN": "Yes",
+    "MARITAL": "Married",
+    "RELIG": "Protestant",
+    "RELIGATTEND": "A few times a year",
+    "POLPARTY": "Independent",
+    "INCOME": "$50,000-$75,000",
+    "POLIDEOLOGY": "Moderate",
+    "RACE": "Hispanic",
+    "respondent_id": "c120_010"
+  },
+  "entries": [
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCONFUSEc_W45",
+      "input_attribute": "I think that publishing information before it is fully verified leads to a fair amount of confusion about the facts.",
+      "original_question": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Breaking information that is published before everything is verified",
+      "subject": "Breaking information that is published before everything is verified",
+      "prompt": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? {} (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "What's your take on how much people get mixed up about the facts when news outlets rush to publish breaking stories before verifying all the details? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCHALe_W45",
+      "input_attribute": "I think the financial incentives for creating false information pose a significant, though perhaps not insurmountable, problem.",
+      "original_question": "How much of a challenge do you think the ability to make money from it is in addressing made-up news and information?",
+      "subject": "ability to make money from it is in addressing made-up news and information",
+      "prompt": "How much of a challenge do you think the {}? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)",
+      "target": "A moderately big challenge",
+      "question_paraphrased": [
+        "Do you think the financial gain people get from spreading fake news is a major hurdle in stopping it? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PUBLICDATA_W49",
+      "input_attribute": "I value my digital privacy and believe that individuals should have the right to remove or hide sensitive personal history that could negatively impact their reputation or future.",
+      "original_question": "Today a wide range of information about people is searchable online. Do you think it is more important for people to have the ability to",
+      "subject": "ability to",
+      "prompt": "Today a wide range of information about people is searchable online. Do you think it is more important for people to have the {} (Options: Discover potentially useful information about others, Keep things about themselves that might be potentially damaging from being searchable online, Refused)",
+      "target": "Keep things about themselves that might be potentially damaging from being searchable online",
+      "question_paraphrased": [
+        "When it comes to personal data on the internet, which do you value more: the power to look up helpful details about others or the power for regular people to suppress harmful search results about themselves? (Options: Discover potentially useful information about others, Keep things about themselves that might be potentially damaging from being searchable online, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE3b_W49",
+      "input_attribute": "I do not trust technology companies at all to use facial recognition technology in a responsible way.",
+      "original_question": "How much, if at all, do you trust the following groups to use facial recognition technology responsibly? Technology companies",
+      "subject": "trust the following groups to use facial recognition technology responsibly? Technology companies",
+      "prompt": "How much, if at all, do you {} (Options: A great deal, Somewhat, Not too much, Not at all, Refused)",
+      "target": "Not at all",
+      "question_paraphrased": [
+        "Do you feel confident that tech companies will be ethical when using facial recognition tools? (Options: A great deal, Somewhat, Not too much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "TRACKCO1a_W49",
+      "input_attribute": "I believe very little of my online or cellphone activity is being tracked by tech companies.",
+      "original_question": "As far as you know, how much of what you do online or on your cellphone is being tracked by advertisers, technology firms or other companies?",
+      "subject": "what you do online or on your cellphone is being tracked by advertisers, technology firms or other companies",
+      "prompt": "As far as you know, how much of {}? (Options: All or almost all of it, Most of it, Some of it, Very little of it, None of it, Refused)",
+      "target": "Very little of it",
+      "question_paraphrased": [
+        "How much of your digital footprint do you think companies are actually monitoring? (Options: All or almost all of it, Most of it, Some of it, Very little of it, None of it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCONFUSEe_W45",
+      "input_attribute": "I think altered visuals cause a noticeable amount of confusion, though they are just one of several factors complicating the news landscape.",
+      "original_question": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? A video or image that is altered or made up to mislead the public",
+      "subject": "video or image that is altered or made up to mislead the public",
+      "prompt": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? A {} (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "How significantly does synthetic or edited media cloud the public's understanding of what is actually happening in the world? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "CONCERNGRPb_W49",
+      "input_attribute": "I am deeply worried and anxious about how much personal information and data advertisers have gathered about me.",
+      "original_question": "How concerned are you, if at all, about how much personal information advertisers might know about you?",
+      "subject": "personal information advertisers might know",
+      "prompt": "How concerned are you, if at all, about how much {} about you? (Options: Concerned a lot, Concerned a little, Not concerned, Refused)",
+      "target": "Concerned a lot",
+      "question_paraphrased": [
+        "Does it bother you that advertisers possess a lot of your personal data? (Options: Concerned a lot, Concerned a little, Not concerned, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOWHYd_W45",
+      "input_attribute": "I don't think that being funny is a factor at all when it comes to why made-up news is produced.",
+      "original_question": "How much do you think to be funny is a reason why made-up news and information is created?",
+      "subject": "funny is a reason why made-up news and information is created",
+      "prompt": "How much do you think to be {}? (Options: Major reason, Minor reason, Not a reason, Refused)",
+      "target": "Not a reason",
+      "question_paraphrased": [
+        "Do you think people create fake news stories just to be funny or to entertain others? (Options: Major reason, Minor reason, Not a reason, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPIMPe_W45",
+      "input_attribute": "I feel that misinformation only has a small impact on the public's ability to solve community problems.",
+      "original_question": "Overall, how much of an impact do you think made-up news and information has on the public's ability to solve community problems?",
+      "subject": "impact do you think made-up news and information has on the public's ability to solve community problems",
+      "prompt": "Overall, how much of an {}? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)",
+      "target": "Small impact",
+      "question_paraphrased": [
+        "In your opinion, how significantly does fake news hinder people from working together to fix things in their community? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "NEWSPROBc_W45",
+      "input_attribute": "I think the abundance of news sources is a significant issue that causes confusion for most people trying to stay informed.",
+      "original_question": "How much of a problem is too many different sources to choose from when it comes to how the public stays informed about the basic facts of current issues and events?",
+      "subject": "too many different sources to choose from",
+      "prompt": "How much of a problem is {} when it comes to how the public stays informed about the basic facts of current issues and events? (Options: A very big problem, A moderately big problem, A small problem, Not a problem at all, Refused)",
+      "target": "A moderately big problem",
+      "question_paraphrased": [
+        "Do you think having an overwhelming number of news outlets makes it harder for people to understand the basic facts of what's happening? (Options: A very big problem, A moderately big problem, A small problem, Not a problem at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "RESTRICTWHO_W45",
+      "input_attribute": "I believe that journalists and news organizations need to return to high standards of fact-checking and unbiased reporting to combat the rise of fake news.",
+      "original_question": "Who do you think has the most responsibility to reduce the amount of made-up news and information?",
+      "subject": "most responsibility to reduce the amount of made-up news and information",
+      "prompt": "Who do you think has the {}? (Options: The government, Technology companies, The public, The news media, None of these, Refused)",
+      "target": "The news media",
+      "question_paraphrased": [
+        "Which group or entity should take the lead in fixing the problem of fake news? (Options: The government, Technology companies, The public, The news media, None of these, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "SOURCESKEPc_W45",
+      "input_attribute": "I have some trust in the accuracy of news and information from political leaders and public officials.",
+      "original_question": "How much do you trust the accuracy of the news and information that you get from political leaders and public officials",
+      "subject": "accuracy of the news and information that you get from political leaders and public officials",
+      "prompt": "How much do you trust the {} (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "How reliable do you find the information shared by politicians and government figures? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFORESTRICTb_W45",
+      "input_attribute": "I believe that the freedom to publish and access satire should be protected under all circumstances.",
+      "original_question": "Which comes closer to your view about the following type of news and information? Satire about an issue or event",
+      "subject": "Satire about an issue or event",
+      "prompt": "Which comes closer to your view about the following type of news and information? {} (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)",
+      "target": "The freedom to publish and access it should be protected",
+      "question_paraphrased": [
+        "How do you think we should handle news satire and parody regarding current events? (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W32",
+      "question_id": "MISINFT_W32",
+      "input_attribute": "I believe that technology platforms have a responsibility to filter out misinformation to prevent the spread of false claims.",
+      "original_question": "Thinking about news and information online, including social media which comes closer to your own view?",
+      "subject": "news and information online, including social media",
+      "prompt": "Thinking about {} which comes closer to your own view? (Options: Technology companies should take steps to restrict false information online, People's freedom to publish and access information should be protected, Refused)",
+      "target": "Technology companies should take steps to restrict false information online",
+      "question_paraphrased": [
+        "When it comes to the internet and social media, do you think tech companies should limit fake news or should free speech be the priority? (Options: Technology companies should take steps to restrict false information online, People's freedom to publish and access information should be protected, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "political issues"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W41",
+      "question_id": "SOLVPROBf_W41",
+      "input_attribute": "I think the news media will have a somewhat positive impact on solving our national problems.",
+      "original_question": "In the future, what kind of an impact do you think the news media will have in solving the biggest problems facing the country?",
+      "subject": "news media will have in solving the biggest problems",
+      "prompt": "In the future, what kind of an impact do you think the {} facing the country? (Options: A very positive impact, A somewhat positive impact, A somewhat negative impact, A very negative impact, Refused)",
+      "target": "A somewhat positive impact",
+      "question_paraphrased": [
+        "Looking ahead, how much do you think the news media will help or hinder the process of fixing our country's major issues? (Options: A very positive impact, A somewhat positive impact, A somewhat negative impact, A very negative impact, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "future"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "GOVREGV1_W49",
+      "input_attribute": "I believe that the current laws are insufficient and that the government needs to implement stricter rules to protect consumer data.",
+      "original_question": "How much government regulation of what companies can do with their customers' personal information do you think there should be?",
+      "subject": "government regulation of what companies can do with their customers' personal information",
+      "prompt": "How much {} do you think there should be? (Options: More regulation, Less regulation, About the same amount, Refused)",
+      "target": "More regulation",
+      "question_paraphrased": [
+        "What's your take on the level of government rules regarding how businesses handle user data? (Options: More regulation, Less regulation, About the same amount, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "political issues"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DATAUSEa_W49",
+      "input_attribute": "I believe it is acceptable for the government to collect data on all Americans to identify potential terrorist threats.",
+      "original_question": "Do you think the following uses of data/information are acceptable or unacceptable? The government collecting data about all Americans to assess who might be a potential terrorist threat",
+      "subject": "government collecting data about all Americans to assess who might be a potential terrorist threat",
+      "prompt": "Do you think the following uses of data/information are acceptable or unacceptable? The {} (Options: Acceptable, Unacceptable, Not sure, Refused)",
+      "target": "Acceptable",
+      "question_paraphrased": [
+        "Is it okay for the government to gather information on every citizen to help catch potential terrorists? (Options: Acceptable, Unacceptable, Not sure, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "crime/security"
+      ]
+    }
+  ]
+}

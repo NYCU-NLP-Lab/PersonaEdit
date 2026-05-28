@@ -1,0 +1,1821 @@
+{
+  "metadata": {
+    "QKEY": "c120_010",
+    "OWNAGE_1_W26": "nan",
+    "CREGION": "West",
+    "AGE": "65+",
+    "SEX": "Female",
+    "EDUCATION": "High school graduate",
+    "CITIZEN": "Yes",
+    "MARITAL": "Married",
+    "RELIG": "Protestant",
+    "RELIGATTEND": "A few times a year",
+    "POLPARTY": "Independent",
+    "INCOME": "$50,000-$75,000",
+    "POLIDEOLOGY": "Moderate",
+    "RACE": "Hispanic",
+    "respondent_id": "c120_010"
+  },
+  "entries": [
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "SEEK_W45",
+      "input_attribute": "I am a proactive news seeker who intentionally looks for updates and information.",
+      "original_question": "Which statement best describes how you get news?",
+      "subject": "statement best describes how you get news",
+      "prompt": "Which {}? (Options: I mostly get news because I'm looking for it, I mostly get news because I happen to come across it, Refused)",
+      "target": "I mostly get news because I'm looking for it",
+      "question_paraphrased": [
+        "How do you usually end up finding out about what's happening in the world? (Options: I mostly get news because I'm looking for it, I mostly get news because I happen to come across it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPRESb_W45",
+      "input_attribute": "I continue to consume the same amount of news as before, regardless of the issue of made-up news and information.",
+      "original_question": "Has the issue of made-up news and information led you to reduce the amount of news you get overall?",
+      "subject": "issue of made-up news and information",
+      "prompt": "Has the {} led you to reduce the amount of news you get overall? (Options: Yes, have done this, No, have not done this, Refused)",
+      "target": "No, have not done this",
+      "question_paraphrased": [
+        "Have you started looking at its news less often because of the fake news problem? (Options: Yes, have done this, No, have not done this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP2_W49",
+      "input_attribute": "I always read every word of a company's privacy policy before I agree to it.",
+      "original_question": "When you are asked to agree to a company's privacy policy, how often do you read it before agreeing to it?",
+      "subject": "read it before agreeing to it",
+      "prompt": "When you are asked to agree to a company's privacy policy, how often do you {}? (Options: Always, Often, Sometimes, Never, Refused)",
+      "target": "Always",
+      "question_paraphrased": [
+        "How frequently do you actually look through the terms of a privacy policy before clicking 'accept'? (Options: Always, Often, Sometimes, Never, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPLEVELb_W45",
+      "input_attribute": "I don't think there is a significant amount of fabricated information regarding our local news.",
+      "original_question": "How much made-up news and information do you think is created about local issues, events and public figures?",
+      "subject": "made-up news and information",
+      "prompt": "How much {} do you think is created about local issues, events and public figures? (Options: A lot, Some, Not much, None, Refused)",
+      "target": "Not much",
+      "question_paraphrased": [
+        "In your opinion, how common is it for people to fabricate news stories about what's happening in your local community? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP6b_W49",
+      "input_attribute": "I am somewhat comfortable with my personal data being shared for social research, though I have minor reservations.",
+      "original_question": "How comfortable are you, if at all, with companies using your personal data sharing it with outside groups doing research that might help improve society?",
+      "subject": "companies using your personal data sharing it with outside groups",
+      "prompt": "How comfortable are you, if at all, with {} doing research that might help improve society? (Options: Very comfortable, Somewhat comfortable, Not too comfortable, Not comfortable at all, Refused)",
+      "target": "Somewhat comfortable",
+      "question_paraphrased": [
+        "How do you feel about companies letting researchers use your data if it could lead to positive changes for society? (Options: Very comfortable, Somewhat comfortable, Not too comfortable, Not comfortable at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOOWNc_W45",
+      "input_attribute": "I find it easy to identify which breaking news stories are unverified and which have been fully fact-checked.",
+      "original_question": "How do you feel about your own ability to recognize the following type of news and information? Breaking information that is published before everything is verified",
+      "subject": "ability to recognize the following type of news and information",
+      "prompt": "How do you feel about your own {}? Breaking information that is published before everything is verified (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)",
+      "target": "I find it easy to recognize it",
+      "question_paraphrased": [
+        "Are you confident in spotting breaking news reports that haven't been fully verified yet? (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "NEWS_PLATFORMg_W45",
+      "input_attribute": "I never get my news from social media sites and rely on different sources for information.",
+      "original_question": "Thinking about news (by news we mean information about events and issues that involve more than just your friends and family), how often do you get news from a social media site (such as Facebook, Twitter, or Snapchat)",
+      "subject": "get news from a social media site",
+      "prompt": "Thinking about news (by news we mean information about events and issues that involve more than just your friends and family), how often do you {} (such as Facebook, Twitter, or Snapchat) (Options: Often, Sometimes, Hardly ever, Never, Refused)",
+      "target": "Never",
+      "question_paraphrased": [
+        "How regularly do you encounter news stories or current event updates while browsing social media? (Options: Often, Sometimes, Hardly ever, Never, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP5d_W49",
+      "input_attribute": "I am not too confident that companies use my personal data in ways that I am comfortable with.",
+      "original_question": "How confident are you, if at all, that companies will use your personal information in ways you will feel comfortable with?",
+      "subject": "companies will use your personal information in ways you will feel comfortable with",
+      "prompt": "How confident are you, if at all, that {}? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)",
+      "target": "Not too confident",
+      "question_paraphrased": [
+        "Do you generally trust corporations to handle your personal details appropriately? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFORESTRICTe_W45",
+      "input_attribute": "I think that steps should be taken to restrict altered or made-up videos and images intended to mislead the public, as I prioritize the safety and integrity of information over absolute freedom for deceptive content.",
+      "original_question": "Which comes closer to your view about the following type of news and information? A video or image that is altered or made up to mislead the public",
+      "subject": "video or image that is altered or made up to mislead the public",
+      "prompt": "Which comes closer to your view about the following type of news and information? A {} (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)",
+      "target": "Steps should be taken to restrict it",
+      "question_paraphrased": [
+        "When it comes to videos or images that have been manipulated to trick people, do you think they should be allowed online or should there be efforts to limit them? (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "FCFAIR_W45",
+      "input_attribute": "I believe that organizations involved in fact-checking conduct their evaluations in a neutral and balanced way for everyone involved.",
+      "original_question": "Different organizations and news outlets have taken on fact-checking efforts. Do you think that those who do the fact-checking",
+      "subject": "those who do the fact-checking",
+      "prompt": "Different organizations and news outlets have taken on fact-checking efforts. Do you think that {} (Options: Deal fairly with all sides, Tend to favor one side, Refused)",
+      "target": "Deal fairly with all sides",
+      "question_paraphrased": [
+        "When news outlets verify the accuracy of claims, do you feel they treat all parties involved equally? (Options: Deal fairly with all sides, Tend to favor one side, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCONFUSEa_W45",
+      "input_attribute": "I believe that intentionally misleading news causes a massive amount of confusion among the public regarding basic facts.",
+      "original_question": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Made-up information that is intended to mislead the public",
+      "subject": "Made-up information that is intended to mislead the public",
+      "prompt": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? {} (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "A great deal",
+      "question_paraphrased": [
+        "To what extent do you feel that fake news stories meant to deceive people actually scramble the public's understanding of what is happening in the world? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOKNOWc_W45",
+      "input_attribute": "I believe that ordinary citizens possess the necessary critical thinking skills to identify unverified breaking news as it happens.",
+      "original_question": "How do you feel about the average American's ability to recognize the following type of news and information? Breaking information that is published before everything is verified",
+      "subject": "average American's ability to recognize the following type of news and information",
+      "prompt": "How do you feel about the {}? Breaking information that is published before everything is verified (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)",
+      "target": "The average American should be able to recognize it",
+      "question_paraphrased": [
+        "Do you think most Americans can distinguish unverified breaking news from fully vetted reporting? (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE2b_W49",
+      "input_attribute": "I think facial recognition technology usually gets gender right, though it might have some occasional inaccuracies.",
+      "original_question": "Based on what you know, how effective do you think facial recognition technology is at accurately assessing someone's gender?",
+      "subject": "facial recognition technology is at accurately assessing someone's gender",
+      "prompt": "Based on what you know, how effective do you think {}? (Options: Very effective, Somewhat effective, Not too effective, Not effective at all, Refused)",
+      "target": "Somewhat effective",
+      "question_paraphrased": [
+        "How good do you think software is at correctly identifying if someone is male or female just by looking at their face? (Options: Very effective, Somewhat effective, Not too effective, Not effective at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCREATEe_W45",
+      "input_attribute": "I think that some of the news and information coming from activist groups is made-up.",
+      "original_question": "How much made-up news and information do you think is created by activist groups",
+      "subject": "made-up news and information",
+      "prompt": "How much {} do you think is created by activist groups (Options: A lot, Some, Not much, None, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "To what extent do you feel that advocacy organizations generate false or misleading content? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "TRACKCO1b_W49",
+      "input_attribute": "I suspect that very little of my offline presence is actually tracked by technology firms.",
+      "original_question": "As far as you know, how much of what you do offline like where you are or who you are talking to is being tracked by advertisers, technology firms or other companies?",
+      "subject": "offline like where you are or who you are talking to is being tracked by advertisers, technology firms or other companies",
+      "prompt": "As far as you know, how much of what you do {}? (Options: All or almost all of it, Most of it, Some of it, Very little of it, None of it, Refused)",
+      "target": "Very little of it",
+      "question_paraphrased": [
+        "To what extent do you think companies are monitoring your real-world movements and conversations? (Options: All or almost all of it, Most of it, Some of it, Very little of it, None of it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "SOURCESKEPd_W45",
+      "input_attribute": "I don't really rely on my friends and family for accurate news and often doubt what they share.",
+      "original_question": "How much do you trust the accuracy of the news and information that you get from friends and family",
+      "subject": "accuracy of the news and information that you get from friends and family",
+      "prompt": "How much do you trust the {} (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Not much",
+      "question_paraphrased": [
+        "What's your level of trust in the news your inner circle shares with you? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "CONTROLCO_W49",
+      "input_attribute": "I believe I have very little control over the data companies collect about me.",
+      "original_question": "How much control do you think you have over the data that companies collect about you?",
+      "subject": "over the data that companies collect",
+      "prompt": "How much control do you think you have {} about you? (Options: A great deal of control, Some control, Very little control, No control, Refused)",
+      "target": "Very little control",
+      "question_paraphrased": [
+        "Do you feel like you're in the driver's seat when it comes to the personal information companies gather? (Options: A great deal of control, Some control, Very little control, No control, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFORESTRICTd_W45",
+      "input_attribute": "I believe that even if news is biased toward one side, the freedom to publish and access it should be protected from government or corporate interference.",
+      "original_question": "Which comes closer to your view about the following type of news and information? Factual information presented to favor one side of an issue",
+      "subject": "Factual information presented to favor one side of an issue",
+      "prompt": "Which comes closer to your view about the following type of news and information? {} (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)",
+      "target": "The freedom to publish and access it should be protected",
+      "question_paraphrased": [
+        "How do you think we should handle news that reports facts but frames them to support a specific viewpoint? (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "VIDOFT_W45",
+      "input_attribute": "I never come across any images or videos that have been doctored to mislead people.",
+      "original_question": "How often do you come across videos or images that have been altered or made-up to mislead the public?",
+      "subject": "videos or images that have been altered or made-up to mislead the public",
+      "prompt": "How often do you come across {}? (Options: Often, Sometimes, Hardly ever, Never, Refused)",
+      "target": "Never",
+      "question_paraphrased": [
+        "How regularly do you see manipulated or fake visual content intended to trick people? (Options: Often, Sometimes, Hardly ever, Never, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPRESd_W45",
+      "input_attribute": "I have not taken the step of reporting or flagging news stories even if I thought they were made up.",
+      "original_question": "Has the issue of made-up news and information led you to report or flag a story that you think is made-up?",
+      "subject": "made-up news and information led you to report or flag a story",
+      "prompt": "Has the issue of {} that you think is made-up? (Options: Yes, have done this, No, have not done this, Refused)",
+      "target": "No, have not done this",
+      "question_paraphrased": [
+        "Have you ever used a reporting tool to flag a story you thought was fake? (Options: Yes, have done this, No, have not done this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPIMPd_W45",
+      "input_attribute": "I think that made-up news has a noticeable effect on journalism, even if it doesn't completely block reporters from doing their jobs.",
+      "original_question": "Overall, how much of an impact do you think made-up news and information has on journalists' ability to get the information they need for their stories?",
+      "subject": "made-up news and information",
+      "prompt": "Overall, how much of an impact do you think {} has on journalists' ability to get the information they need for their stories? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)",
+      "target": "Moderate impact",
+      "question_paraphrased": [
+        "How much do you think fabricated news gets in the way of reporters doing their research and gathering facts? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PWMAN2_W49",
+      "input_attribute": "I do not have internet access and use my devices offline.",
+      "original_question": "What is the main reason you do not use a password manager?",
+      "subject": "password manager",
+      "prompt": "What is the main reason you do not use a {}? (Options: Don't know what that is, My passwords are secure enough, Don't need it, Too expensive, Too complicated, Don't trust them, Don't think they are effective, Other reason, Offline: does not have internet, Refused)",
+      "target": "Offline: does not have internet",
+      "question_paraphrased": [
+        "Why haven't you started using a password manager yet? (Options: Don't know what that is, My passwords are secure enough, Don't need it, Too expensive, Too complicated, Don't trust them, Don't think they are effective, Other reason, Offline: does not have internet, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPRESc_W45",
+      "input_attribute": "I have taken the time to personally verify the accuracy of news stories because of the prevalence of misinformation.",
+      "original_question": "Has the issue of made-up news and information led you to check the facts of news stories yourself?",
+      "subject": "check the facts of news stories",
+      "prompt": "Has the issue of made-up news and information led you to {} yourself? (Options: Yes, have done this, No, have not done this, Refused)",
+      "target": "Yes, have done this",
+      "question_paraphrased": [
+        "Have you started fact-checking news reports on your own because you're worried about fake news? (Options: Yes, have done this, No, have not done this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOWHYa_W45",
+      "input_attribute": "I believe that financial gain is one of the primary motivations driving the creation of fake news.",
+      "original_question": "How much do you think to make money is a reason why made-up news and information is created?",
+      "subject": "make money is a reason why made-up news and information is created",
+      "prompt": "How much do you think to {}? (Options: Major reason, Minor reason, Not a reason, Refused)",
+      "target": "Major reason",
+      "question_paraphrased": [
+        "In your opinion, to what extent is the pursuit of profit a driving force behind the production of fabricated news? (Options: Major reason, Minor reason, Not a reason, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP5b_W49",
+      "input_attribute": "I am not too confident that companies will promptly notify me if my personal data is misused or compromised.",
+      "original_question": "How confident are you, if at all, that companies will promptly notify you if your personal data has been misused or compromised?",
+      "subject": "companies will promptly notify you if your personal data has been misused or compromised",
+      "prompt": "How confident are you, if at all, that {}? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)",
+      "target": "Not too confident",
+      "question_paraphrased": [
+        "Do you trust companies to tell you right away if your private info gets leaked or hacked? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "DISAVOID_W45",
+      "input_attribute": "I do not avoid talking to people even if I suspect they might mention news or information that has been made up.",
+      "original_question": "Have you ever avoided talking with someone because you thought they might bring made-up news and information into the conversation?",
+      "subject": "avoided talking with someone because you thought they might bring made-up news and information into the conversation",
+      "prompt": "Have you ever {}? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Do you find yourself dodging conversations with people you suspect might share fake news? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPIMPc_W45",
+      "input_attribute": "I feel that although fake news exists, it only causes minor disruptions to the actual work performed by political leaders.",
+      "original_question": "Overall, how much of an impact do you think made-up news and information has on political leaders' ability to get work done?",
+      "subject": "impact do you think made-up news and information has on political leaders' ability to get work done",
+      "prompt": "Overall, how much of an {}? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)",
+      "target": "Small impact",
+      "question_paraphrased": [
+        "To what extent do you feel that fake news hinders the productivity of government officials and lawmakers? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOKNOWe_W45",
+      "input_attribute": "I believe that the typical person has the necessary critical thinking skills to identify manipulated or fabricated media designed to deceive people.",
+      "original_question": "How do you feel about the average American's ability to recognize the following type of news and information? A video or image that is altered or made up to mislead the public",
+      "subject": "average American's ability to recognize the following type of news and information? A video or image that is altered or made up to mislead the public",
+      "prompt": "How do you feel about the {} (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)",
+      "target": "The average American should be able to recognize it",
+      "question_paraphrased": [
+        "Do you think most people are capable of spotting videos or photos that have been faked to spread lies? (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DB1b_W49",
+      "input_attribute": "I do not use the internet and therefore do not have social media or email accounts.",
+      "original_question": "In the last 12 months, have you had someone take over your social media or email account without your permission",
+      "subject": "someone take over your social media or email account without your permission",
+      "prompt": "In the last 12 months, have you had {} (Options: Yes, No, Offline: does not have internet, Refused)",
+      "target": "Offline: does not have internet",
+      "question_paraphrased": [
+        "Has anyone logged into your email or social media accounts without your consent recently? (Options: Yes, No, Offline: does not have internet, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PRIVACYNEWS1_W49",
+      "input_attribute": "I follow news about privacy issues somewhat closely, keeping an eye on major developments.",
+      "original_question": "How closely, if at all, do you follow news about privacy issues?",
+      "subject": "news about privacy issues",
+      "prompt": "How closely, if at all, do you follow {}? (Options: Very closely, Somewhat closely, Not too closely, Not at all closely, Refused)",
+      "target": "Somewhat closely",
+      "question_paraphrased": [
+        "How much attention do you pay to news stories regarding data privacy and security? (Options: Very closely, Somewhat closely, Not too closely, Not at all closely, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "WATCHDOG_3_W45",
+      "input_attribute": "I believe that news organizations maintain balance and objectivity when covering political and social issues.",
+      "original_question": "In presenting the news dealing with political and social issues, do you think that news organizations",
+      "subject": "news organizations",
+      "prompt": "In presenting the news dealing with political and social issues, do you think that {} (Options: Deal fairly with all sides, Tend to favor one side, Refused)",
+      "target": "Deal fairly with all sides",
+      "question_paraphrased": [
+        "How do you feel about the way news outlets cover different viewpoints on social and political topics? (Options: Deal fairly with all sides, Tend to favor one side, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP6c_W49",
+      "input_attribute": "I am somewhat comfortable with companies using my personal data to help them develop new products.",
+      "original_question": "How comfortable are you, if at all, with companies using your personal data to help them develop new products?",
+      "subject": "companies using your personal data to help them develop new products",
+      "prompt": "How comfortable are you, if at all, with {}? (Options: Very comfortable, Somewhat comfortable, Not too comfortable, Not comfortable at all, Refused)",
+      "target": "Somewhat comfortable",
+      "question_paraphrased": [
+        "How do you feel about businesses using your personal info to create new stuff? (Options: Very comfortable, Somewhat comfortable, Not too comfortable, Not comfortable at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCREATEa_W45",
+      "input_attribute": "I feel that journalists do not create very much made-up news or information.",
+      "original_question": "How much made-up news and information do you think is created by journalists",
+      "subject": "made-up news and information do you think is created by journalists",
+      "prompt": "How much {} (Options: A lot, Some, Not much, None, Refused)",
+      "target": "Not much",
+      "question_paraphrased": [
+        "In your opinion, how common is it for journalists to invent news stories or information? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "NEWS_PLATFORMh_W45",
+      "input_attribute": "I never use news websites or apps to get my information.",
+      "original_question": "Thinking about news (by news we mean information about events and issues that involve more than just your friends and family), how often do you get news from a news website or app",
+      "subject": "get news from a news website or app",
+      "prompt": "Thinking about news (by news we mean information about events and issues that involve more than just your friends and family), how often do you {} (Options: Often, Sometimes, Hardly ever, Never, Refused)",
+      "target": "Never",
+      "question_paraphrased": [
+        "How many times a week do you find yourself opening a news app or visiting a news site to see what is happening in the world? (Options: Often, Sometimes, Hardly ever, Never, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCHALc_W45",
+      "input_attribute": "I feel that while low news awareness plays a part, it is only a minor factor in the overall issue of fake news.",
+      "original_question": "How much of a challenge do you think low awareness of current events are in addressing made-up news and information?",
+      "subject": "low awareness of current events",
+      "prompt": "How much of a challenge do you think {} are in addressing made-up news and information? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)",
+      "target": "A small challenge",
+      "question_paraphrased": [
+        "To what extent does a lack of news literacy make it harder to combat fake news? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "SHARE1_W49",
+      "input_attribute": "I recently chose to stop using a particular product or service due to concerns about the amount of personal information being collected from me.",
+      "original_question": "Have you recently decided not to use a product or service because you were worried about how much personal information would be collected about you?",
+      "subject": "decided not to use a product or service because you were worried about how much personal information would be collected about you",
+      "prompt": "Have you recently {}? (Options: Yes, have done this, No, have not done this, Refused)",
+      "target": "Yes, have done this",
+      "question_paraphrased": [
+        "Lately, have you skipped out on a service or product just because you felt they were asking for too much personal data? (Options: Yes, have done this, No, have not done this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "CONTROLGRPc_W49",
+      "input_attribute": "I feel that once a transaction is made, I have no power to prevent companies or entities from accessing my purchase information.",
+      "original_question": "How much control, if any, do you think you have over who can access the purchases you've made, either online or in person?",
+      "subject": "who can access the purchases you've made",
+      "prompt": "How much control, if any, do you think you have over {}, either online or in person? (Options: A lot of control, A little control, No control, Refused)",
+      "target": "No control",
+      "question_paraphrased": [
+        "How much say do you feel you have regarding which parties can view your shopping and purchase history? (Options: A lot of control, A little control, No control, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOKNOWa_W45",
+      "input_attribute": "I feel that it is asking too much of the average American to distinguish between reality and sophisticated, deceptive misinformation.",
+      "original_question": "How do you feel about the average American's ability to recognize the following type of news and information? Made-up information that is intended to mislead the public",
+      "subject": "average American's ability to recognize the following type of news and information? Made-up information that is intended to mislead the public",
+      "prompt": "How do you feel about the {} (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)",
+      "target": "It is too much to ask of the average American to be able to recognize it",
+      "question_paraphrased": [
+        "Do you think most people in the U.S. can tell when they are being shown fake news meant to trick them, or is that expecting too much? (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "ANONYMOUS1CO_W49",
+      "input_attribute": "I feel that in the modern world, it is impossible to avoid some level of data collection by corporations.",
+      "original_question": "Do you think it is possible to go about daily life today without having companies collect data about you?",
+      "subject": "go about daily life today without having companies collect data",
+      "prompt": "Do you think it is possible to {} about you? (Options: Yes, it is possible, No, it is not possible, Refused)",
+      "target": "No, it is not possible",
+      "question_paraphrased": [
+        "Is it actually realistic to avoid corporate data collection in this day and age? (Options: Yes, it is possible, No, it is not possible, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPRESe_W45",
+      "input_attribute": "I have adjusted my social media habits and changed how I interact with platforms because of fabricated news.",
+      "original_question": "Has the issue of made-up news and information led you to change the way you use social media?",
+      "subject": "made-up news and information",
+      "prompt": "Has the issue of {} led you to change the way you use social media? (Options: Yes, have done this, No, have not done this, Refused)",
+      "target": "Yes, have done this",
+      "question_paraphrased": [
+        "Because of fake news, have you started using social media platforms any differently than before? (Options: Yes, have done this, No, have not done this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PRIVACYREG_W49",
+      "input_attribute": "I am aware that data privacy laws exist, but I find the actual regulations and their specific protections quite confusing and difficult to follow.",
+      "original_question": "How much do you feel you understand the laws and regulations that are currently in place to protect your data privacy?",
+      "subject": "laws and regulations that are currently in place to protect your data privacy",
+      "prompt": "How much do you feel you understand the {}? (Options: A great deal, Some, Very little, Not at all, Refused)",
+      "target": "Very little",
+      "question_paraphrased": [
+        "To what extent do you feel knowledgeable about the current legal safeguards for your personal information? (Options: A great deal, Some, Very little, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "NEWSPROBb_W45",
+      "input_attribute": "I feel that while some people struggle to distinguish facts from opinions, it isn't a major hurdle for the majority of the public.",
+      "original_question": "How much of a problem is the public's difficulty distinguishing facts from opinions when it comes to how the public stays informed about the basic facts of current issues and events?",
+      "subject": "public's difficulty distinguishing facts from opinions",
+      "prompt": "How much of a problem is the {} when it comes to how the public stays informed about the basic facts of current issues and events? (Options: A very big problem, A moderately big problem, A small problem, Not a problem at all, Refused)",
+      "target": "A small problem",
+      "question_paraphrased": [
+        "How serious of an issue is it that people struggle to tell the difference between facts and opinions when staying updated on news? (Options: A very big problem, A moderately big problem, A small problem, Not a problem at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FITTRACK_W49",
+      "input_attribute": "I do not wear any kind of smartwatch or fitness tracking device on a regular basis.",
+      "original_question": "Do you regularly wear a smart watch or a wearable fitness tracker?",
+      "subject": "regularly wear a smart watch or a wearable fitness tracker",
+      "prompt": "Do you {}? (Options: Yes, wear this, No, do not wear this, Refused)",
+      "target": "No, do not wear this",
+      "question_paraphrased": [
+        "Is a smartwatch or fitness tracker part of your daily attire? (Options: Yes, wear this, No, do not wear this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "HOMEASSIST1_W49",
+      "input_attribute": "I do not own or use any voice-controlled smart speakers at home.",
+      "original_question": "Do you have a voice-controlled smart speaker in your home, such as an Amazon Echo or a Google Home?",
+      "subject": "voice-controlled smart speaker",
+      "prompt": "Do you have a {} in your home, such as an Amazon Echo or a Google Home? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Is there a smart speaker like an Alexa or Google Home set up at your place? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOWHYc_W45",
+      "input_attribute": "I don't think people create made-up news and information because they want to be famous.",
+      "original_question": "How much do you think for fame is a reason why made-up news and information is created?",
+      "subject": "fame is a reason why made-up news and information is created",
+      "prompt": "How much do you think for {}? (Options: Major reason, Minor reason, Not a reason, Refused)",
+      "target": "Not a reason",
+      "question_paraphrased": [
+        "To what extent do you feel that being famous motivates people to create false information? (Options: Major reason, Minor reason, Not a reason, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP5a_W49",
+      "input_attribute": "I am somewhat confident that companies will follow what their privacy policies say they will do with my personal information.",
+      "original_question": "How confident are you, if at all, that companies will follow what their privacy policies say they will do with your personal information?",
+      "subject": "companies will follow what their privacy policies say they will do with your personal information",
+      "prompt": "How confident are you, if at all, that {}? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)",
+      "target": "Somewhat confident",
+      "question_paraphrased": [
+        "Do you generally trust that businesses actually stick to their own privacy rules regarding your data? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "NEWSPROBa_W45",
+      "input_attribute": "I think there is some made-up news out there, but its actual impact on the public's general knowledge is relatively minor.",
+      "original_question": "How much of a problem is the amount of made-up news and information when it comes to how the public stays informed about the basic facts of current issues and events?",
+      "subject": "amount of made-up news and information",
+      "prompt": "How much of a problem is the {} when it comes to how the public stays informed about the basic facts of current issues and events? (Options: A very big problem, A moderately big problem, A small problem, Not a problem at all, Refused)",
+      "target": "A small problem",
+      "question_paraphrased": [
+        "To what extent do you think fake news interferes with people's understanding of what is actually happening in the world? (Options: A very big problem, A moderately big problem, A small problem, Not a problem at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCREATEd_W45",
+      "input_attribute": "I don't think foreign individuals or groups are responsible for much fabricated news.",
+      "original_question": "How much made-up news and information do you think is created by foreign-based individuals or groups",
+      "subject": "made-up news and information do you think is created by foreign-based individuals or groups",
+      "prompt": "How much {} (Options: A lot, Some, Not much, None, Refused)",
+      "target": "Not much",
+      "question_paraphrased": [
+        "How big of a role do you think foreign groups play in creating fake news? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "RTBFc_W49",
+      "input_attribute": "I do not think individuals should be able to remove negative media coverage from online search results.",
+      "original_question": "Do you think that all Americans should have the right to have negative media coverage removed from public online search results?",
+      "subject": "Americans should have the right to have negative media coverage removed from public online search results",
+      "prompt": "Do you think that all {}? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)",
+      "target": "No, should not be able to remove this from online searches",
+      "question_paraphrased": [
+        "Do you feel that people in the U.S. should be allowed to get negative news or information about themselves deleted from search engines? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPSHARE1_W45",
+      "input_attribute": "I have never shared news or information that I later found out was made-up.",
+      "original_question": "Have you ever shared news and information that you later found out was made-up?",
+      "subject": "shared news and information that you later found out was made-up",
+      "prompt": "Have you ever {}? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Has there ever been a time you posted or sent news that turned out to be fake? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "CONTROLGRPb_W49",
+      "input_attribute": "I do not use the internet, so I do not have online search terms for anyone to access.",
+      "original_question": "How much control, if any, do you think you have over who can access the search terms you use online?",
+      "subject": "who can access the search terms you use online",
+      "prompt": "How much control, if any, do you think you have over {}? (Options: A lot of control, A little control, No control, Offline: does not have internet, Refused)",
+      "target": "Offline: does not have internet",
+      "question_paraphrased": [
+        "To what extent do you feel you can decide who gets to see the things you look for on the internet? (Options: A lot of control, A little control, No control, Offline: does not have internet, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP6a_W49",
+      "input_attribute": "I am somewhat comfortable with businesses using my data to help stop fraud.",
+      "original_question": "How comfortable are you, if at all, with companies using your personal data to help improve their fraud prevention systems?",
+      "subject": "companies using your personal data to help improve their fraud prevention systems",
+      "prompt": "How comfortable are you, if at all, with {}? (Options: Very comfortable, Somewhat comfortable, Not too comfortable, Not comfortable at all, Refused)",
+      "target": "Somewhat comfortable",
+      "question_paraphrased": [
+        "How do you feel about businesses using your private info to make their anti-fraud tools better? (Options: Very comfortable, Somewhat comfortable, Not too comfortable, Not comfortable at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE4b_W49",
+      "input_attribute": "I find the use of facial recognition for monitoring employee attendance to be an inappropriate workplace practice.",
+      "original_question": "In your opinion, is it acceptable or unacceptable to use facial recognition technology in the following situations? Companies automatically tracking the attendance of their employees",
+      "subject": "companies automatically tracking the attendance of their employees",
+      "prompt": "In your opinion, is it acceptable or unacceptable to use facial recognition technology in the following situations? {} (Options: Acceptable, Unacceptable, Not sure, Refused)",
+      "target": "Unacceptable",
+      "question_paraphrased": [
+        "How do you feel about businesses using facial recognition to keep track of when their staff shows up for work? (Options: Acceptable, Unacceptable, Not sure, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPSHARE2_W45",
+      "input_attribute": "I have never shared any news or information knowing it was false or made-up.",
+      "original_question": "Have you ever shared news and information that you knew at the time was made-up?",
+      "subject": "shared news and information that you knew at the time was made-up",
+      "prompt": "Have you ever {}? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Have you ever knowingly posted or sent out a story that you knew wasn't true? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "CONCERNCO_W49",
+      "input_attribute": "I am deeply worried and anxious about how corporations are utilizing my personal information.",
+      "original_question": "How concerned are you, if at all, about how companies are using the data they collect about you?",
+      "subject": "how companies are using the data they collect",
+      "prompt": "How concerned are you, if at all, about {} about you? (Options: Very concerned, Somewhat concerned, Not too concerned, Not at all concerned, Refused)",
+      "target": "Very concerned",
+      "question_paraphrased": [
+        "Are you stressed out about what businesses might be doing with the data they've gathered on you? (Options: Very concerned, Somewhat concerned, Not too concerned, Not at all concerned, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOOWNd_W45",
+      "input_attribute": "I find it easy to recognize factual information presented to favor one side of an issue.",
+      "original_question": "How do you feel about your own ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+      "subject": "ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+      "prompt": "How do you feel about your own {} (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)",
+      "target": "I find it easy to recognize it",
+      "question_paraphrased": [
+        "How confident do you feel when it comes to identifying news that uses true facts but frames them in a biased or one-sided way? (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "SOCMEDIAUSEd_W49",
+      "input_attribute": "I do not use any social media sites beyond what has already been discussed.",
+      "original_question": "Do you use any other social media sites?",
+      "subject": "use any other social media sites",
+      "prompt": "Do you {}? (Options: Yes, use this, No, do not use this, Refused)",
+      "target": "No, do not use this",
+      "question_paraphrased": [
+        "Are there any additional social networking platforms you find yourself browsing or posting on? (Options: Yes, use this, No, do not use this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCHALb_W45",
+      "input_attribute": "I view the public's lack of effort as a small challenge in addressing made-up news and information.",
+      "original_question": "How much of a challenge do you think the public's lack of effort is in addressing made-up news and information?",
+      "subject": "public's lack of effort is in addressing made-up news and information",
+      "prompt": "How much of a challenge do you think the {}? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)",
+      "target": "A small challenge",
+      "question_paraphrased": [
+        "How significant is the issue of people not trying hard enough to stop the spread of fake news? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOOWNe_W45",
+      "input_attribute": "I am confident in my skills to identify when a video or image has been manipulated to deceive people.",
+      "original_question": "How do you feel about your own ability to recognize the following type of news and information? A video or image that is altered or made up to mislead the public",
+      "subject": "ability to recognize the following type of news and information",
+      "prompt": "How do you feel about your own {}? A video or image that is altered or made up to mislead the public (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)",
+      "target": "I find it easy to recognize it",
+      "question_paraphrased": [
+        "How skilled do you think you are at spotting deepfakes or edited photos designed to trick the public? (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP5c_W49",
+      "input_attribute": "I am not too confident that companies will be honest or take responsibility when they mishandle data.",
+      "original_question": "How confident are you, if at all, that companies will publicly admit mistakes and take responsibility when they misuse or compromise their users' personal data?",
+      "subject": "companies will publicly admit mistakes and take responsibility when they misuse or compromise their users' personal data",
+      "prompt": "How confident are you, if at all, that {}? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)",
+      "target": "Not too confident",
+      "question_paraphrased": [
+        "Do you believe corporations will actually step up and own their mistakes if they mishandle your private information? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPOFT_W45",
+      "input_attribute": "I occasionally see news and information that seems to be invented to mislead people.",
+      "original_question": "How often do you come across made-up news and information that is intended to mislead the public?",
+      "subject": "made-up news and information that is intended to mislead the public",
+      "prompt": "How often do you come across {}? (Options: Often, Sometimes, Hardly ever, Never, Refused)",
+      "target": "Sometimes",
+      "question_paraphrased": [
+        "How regularly do you notice news stories or online info that seem fake or meant to trick people? (Options: Often, Sometimes, Hardly ever, Never, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCHALa_W45",
+      "input_attribute": "I think political divisions create a considerable hurdle when trying to deal with fabricated news stories.",
+      "original_question": "How much of a challenge do you think political divides are in addressing made-up news and information?",
+      "subject": "political divides are in addressing made-up news and information",
+      "prompt": "How much of a challenge do you think {}? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)",
+      "target": "A moderately big challenge",
+      "question_paraphrased": [
+        "How significantly do you think political disagreements hinder the fight against fake news? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOKNOWd_W45",
+      "input_attribute": "I believe that identifying biased factual reporting is a fundamental skill that the average citizen ought to possess.",
+      "original_question": "How do you feel about the average American's ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+      "subject": "average American's ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+      "prompt": "How do you feel about the {} (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)",
+      "target": "The average American should be able to recognize it",
+      "question_paraphrased": [
+        "Should we expect regular people to be able to spot when facts are being used to push a specific political agenda? (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "SOCMEDIAUSEa_W49",
+      "input_attribute": "I do not have a Facebook account and do not use the platform.",
+      "original_question": "Do you use facebook?",
+      "subject": "use facebook",
+      "prompt": "Do you {}? (Options: Yes, use this, No, do not use this, Refused)",
+      "target": "No, do not use this",
+      "question_paraphrased": [
+        "Are you active on Facebook these days? (Options: Yes, use this, No, do not use this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "LOYALTY_W49",
+      "input_attribute": "I am a member of a grocery store loyalty program and regularly use my membership rewards.",
+      "original_question": "Do you belong to any loyalty programs of a grocery store or a supermarket that you frequent?",
+      "subject": "belong to any loyalty programs of a grocery store or a supermarket",
+      "prompt": "Do you {} that you frequent? (Options: Yes, belong to this, No, do not belong to this, Refused)",
+      "target": "Yes, belong to this",
+      "question_paraphrased": [
+        "Are you signed up for any rewards programs at the supermarkets where you shop? (Options: Yes, belong to this, No, do not belong to this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "SOCMEDIAUSEc_W49",
+      "input_attribute": "I do not use Twitter.",
+      "original_question": "Do you use twitter?",
+      "subject": "use twitter",
+      "prompt": "Do you {}? (Options: Yes, use this, No, do not use this, Refused)",
+      "target": "No, do not use this",
+      "question_paraphrased": [
+        "Are you on Twitter? (Options: Yes, use this, No, do not use this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP4_W49",
+      "input_attribute": "I understand a fair amount of the content in the privacy policies I read.",
+      "original_question": "How much do you typically understand the privacy policies you read?",
+      "subject": "understand the privacy policies you read",
+      "prompt": "How much do you typically {}? (Options: A great deal, Some, Very little, Not at all, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "How well do the contents of privacy policies usually make sense to you? (Options: A great deal, Some, Very little, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "WATCHDOG_1_W45",
+      "input_attribute": "I feel that media scrutiny is a vital oversight tool that prevents politicians from abusing their power or making unethical decisions.",
+      "original_question": "Some people think that by criticizing leaders, news organizations keep political leaders from doing their job. Others think that such criticism is worth it because it keeps political leaders from doing things that should not be done. Which position is closer to your opinion?",
+      "subject": "criticizing leaders, news organizations keep political leaders from doing their job",
+      "prompt": "Some people think that by {}. Others think that such criticism is worth it because it keeps political leaders from doing things that should not be done. Which position is closer to your opinion? (Options: Keep political leaders from doing their job, Keep political leaders from doing things that shouldn't be done, Refused)",
+      "target": "Keep political leaders from doing things that shouldn't be done",
+      "question_paraphrased": [
+        "Do you think news outlets hinder politicians' work by criticizing them, or is that criticism necessary to keep them in check? (Options: Keep political leaders from doing their job, Keep political leaders from doing things that shouldn't be done, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "SMARTPHONE_W49",
+      "input_attribute": "I do not own a smartphone.",
+      "original_question": "Do you have a smartphone?",
+      "subject": "smartphone",
+      "prompt": "Do you have a {}? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Are you currently a smartphone user? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "SECUR1_W49",
+      "input_attribute": "I feel that my personal data is more vulnerable today than it was five years ago.",
+      "original_question": "On a different topic, compared with five years ago, do you feel your personal information is",
+      "subject": "personal information",
+      "prompt": "On a different topic, compared with five years ago, do you feel your {} is (Options: More secure, Less secure, About the same, Refused)",
+      "target": "Less secure",
+      "question_paraphrased": [
+        "How has your sense of data privacy changed over the last five years? (Options: More secure, Less secure, About the same, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "SOURCESKEPe_W45",
+      "input_attribute": "I am fairly skeptical of the news I encounter on social media sites and don't find it very reliable.",
+      "original_question": "How much do you trust the accuracy of the news and information that you get from Social media sites (such as Facebook, Twitter or Snapchat)",
+      "subject": "trust the accuracy of the news and information that you get from Social media sites",
+      "prompt": "How much do you {} (such as Facebook, Twitter or Snapchat) (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Not much",
+      "question_paraphrased": [
+        "When you see news stories shared on platforms like Facebook or Twitter, how much do you believe they are actually true? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MEDIALOYAL3_W45",
+      "input_attribute": "I consider myself to be loyal to the news source(s) I get my news from",
+      "original_question": "Which of the following statements comes closer to your view?",
+      "subject": "statements comes closer to your view",
+      "prompt": "Which of the following {}? (Options: I consider myself to be loyal to the news source(s) I get my news from, I am not particularly loyal to the news source(s) I get my news from, Refused)",
+      "target": "I consider myself to be loyal to the news source(s) I get my news from",
+      "question_paraphrased": [
+        "How would you describe your relationship with the news outlets you follow? (Options: I consider myself to be loyal to the news source(s) I get my news from, I am not particularly loyal to the news source(s) I get my news from, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPLEVELa_W45",
+      "input_attribute": "I believe that a lot of news and information about national issues and events is completely fabricated.",
+      "original_question": "How much made-up news and information do you think is created about National issues, events and public figures?",
+      "subject": "made-up news and information do you think is created about National issues, events and public figures",
+      "prompt": "How much {}? (Options: A lot, Some, Not much, None, Refused)",
+      "target": "A lot",
+      "question_paraphrased": [
+        "In your opinion, to what extent is the news regarding national politics and public figures actually invented or fake? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCREATEb_W45",
+      "input_attribute": "I believe that political leaders and their staff create a significant amount of fabricated news and information.",
+      "original_question": "How much made-up news and information do you think is created by political leaders and their staff",
+      "subject": "made-up news and information do you think is created by political leaders and their staff",
+      "prompt": "How much {} (Options: A lot, Some, Not much, None, Refused)",
+      "target": "A lot",
+      "question_paraphrased": [
+        "To what extent do you feel that politicians and their teams are responsible for generating fake news? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DB1a_W49",
+      "input_attribute": "I have not had any fraudulent charges on my debit or credit card in the last 12 months.",
+      "original_question": "In the last 12 months, have you had someone put fraudulent charges on your debit or credit card",
+      "subject": "had someone put fraudulent charges on your debit or credit card",
+      "prompt": "In the last 12 months, have you {} (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "In the past year, have you noticed any unauthorized transactions on your credit or debit cards? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCONFUSEb_W45",
+      "input_attribute": "I think satire is responsible for some level of confusion regarding the facts of current issues.",
+      "original_question": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Satire about an issue or event",
+      "subject": "Satire about an issue or event",
+      "prompt": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? {} (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "To what extent do you feel that satirical news programs or articles lead people to be unsure about the actual details of news stories? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE2c_W49",
+      "input_attribute": "I think facial recognition technology is generally capable of identifying race, though it might have some limitations or occasional errors.",
+      "original_question": "Based on what you know, how effective do you think facial recognition technology is at accurately assessing someone's race?",
+      "subject": "facial recognition technology is at accurately assessing someone's race",
+      "prompt": "Based on what you know, how effective do you think {}? (Options: Very effective, Somewhat effective, Not too effective, Not effective at all, Refused)",
+      "target": "Somewhat effective",
+      "question_paraphrased": [
+        "In your opinion, how good is facial recognition at correctly identifying a person's race? (Options: Very effective, Somewhat effective, Not too effective, Not effective at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOKNOWb_W45",
+      "input_attribute": "I believe that most people in the U.S. should have the basic media literacy skills required to identify satirical content about current events.",
+      "original_question": "How do you feel about the average American's ability to recognize the following type of news and information? Satire about an issue or event",
+      "subject": "average American's ability to recognize the following type of news and information? Satire about an issue or event",
+      "prompt": "How do you feel about the {} (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)",
+      "target": "The average American should be able to recognize it",
+      "question_paraphrased": [
+        "Do you think typical citizens are capable of spotting satire when they see it in the news? (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCHALd_W45",
+      "input_attribute": "I view digital technology as only a small challenge in addressing the issue of fake news and misinformation.",
+      "original_question": "How much of a challenge do you think Digital technology is in addressing made-up news and information?",
+      "subject": "Digital technology is in addressing made-up news and information",
+      "prompt": "How much of a challenge do you think {}? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)",
+      "target": "A small challenge",
+      "question_paraphrased": [
+        "How difficult do you feel it is for digital tech to handle the spread of fake news? (Options: A very big challenge, A moderately big challenge, A small challenge, Not a challenge at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPDIS_W45",
+      "input_attribute": "I never engage in discussions with other people about the prevalence of made-up news and information.",
+      "original_question": "How often do you discuss the topic of made-up news and information with others?",
+      "subject": "made-up news and information",
+      "prompt": "How often do you discuss the topic of {} with others? (Options: Often, Sometimes, Hardly ever, Never, Refused)",
+      "target": "Never",
+      "question_paraphrased": [
+        "Is the issue of fake news a common topic of conversation in your social circles? (Options: Often, Sometimes, Hardly ever, Never, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "SOURCESKEPb_W45",
+      "input_attribute": "I am fairly skeptical and do not have much trust in news from outlets I rarely use.",
+      "original_question": "How much do you trust the accuracy of the news and information that you get from news outlets you don't come across often",
+      "subject": "accuracy of the news and information that you get from news outlets",
+      "prompt": "How much do you trust the {} you don't come across often (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Not much",
+      "question_paraphrased": [
+        "When you run into a news story from a source you rarely ever see, how much do you count on it being right? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOWHYb_W45",
+      "input_attribute": "I believe that the primary motivation behind the creation of fabricated news is to aggressively push specific political or social agendas.",
+      "original_question": "How much do you think to push an agenda or viewpoint is a reason why made-up news and information is created?",
+      "subject": "push an agenda or viewpoint is a reason why made-up news and information is created",
+      "prompt": "How much do you think to {}? (Options: Major reason, Minor reason, Not a reason, Refused)",
+      "target": "Major reason",
+      "question_paraphrased": [
+        "To what extent is the desire to promote a specific perspective behind the creation of fake news? (Options: Major reason, Minor reason, Not a reason, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PWMAN_W49",
+      "input_attribute": "I do not use any password management software to track my login credentials.",
+      "original_question": "Do you use a password manager, such as LastPass or iCloud Keychain, to help keep track of your online passwords?",
+      "subject": "password manager, such as LastPass or iCloud Keychain",
+      "prompt": "Do you use a {}, to help keep track of your online passwords? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Are you using any kind of digital tool to manage and store your login details? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPTOPICd_W45",
+      "input_attribute": "I think there is a fair amount of false information being spread about health and medical topics.",
+      "original_question": "How much made-up news and information do you think is created about Health and medicine topics?",
+      "subject": "made-up news and information do you think is created about Health and medicine topics",
+      "prompt": "How much {}? (Options: A lot, Some, Not much, None, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "In your opinion, how common is it to find fake or invented information about health and medicine? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPTOPICf_W45",
+      "input_attribute": "I think there is a moderate amount of fake information when it comes to business and financial reporting.",
+      "original_question": "How much made-up news and information do you think is created about business and finance topics?",
+      "subject": "made-up news and information do you think is created about business and finance topics",
+      "prompt": "How much {}? (Options: A lot, Some, Not much, None, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "In your opinion, how common is it to find fake reports or misleading data about the economy and markets? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOCONFUSEd_W45",
+      "input_attribute": "I think that slanted factual reporting causes a moderate level of misunderstanding among the general public regarding current issues.",
+      "original_question": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? Factual information presented to favor one side of an issue",
+      "subject": "Factual information presented to favor one side of an issue",
+      "prompt": "How much do you think the following type of news and information leaves Americans confused about the basic facts of current issues and events? {} (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "In your opinion, how much do you think people get confused by news that uses real facts but leans toward a specific point of view? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPRESa_W45",
+      "input_attribute": "I still follow the same news sources I always have, despite the presence of made-up news online.",
+      "original_question": "Has the issue of made-up news and information led you to stop getting news from a specific outlet?",
+      "subject": "stop getting news from a specific outlet",
+      "prompt": "Has the issue of made-up news and information led you to {}? (Options: Yes, have done this, No, have not done this, Refused)",
+      "target": "No, have not done this",
+      "question_paraphrased": [
+        "Have you ever quit using a news source because you felt they were providing fake stories? (Options: Yes, have done this, No, have not done this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "RTBFa_W49",
+      "input_attribute": "I do not believe Americans should be able to remove law enforcement data or mugshots from public online search results.",
+      "original_question": "Do you think that all Americans should have the right to have data collected by law enforcement, such as criminal records or mugshots removed from public online search results?",
+      "subject": "all Americans should have the right to have data collected by law enforcement, such as criminal records or mugshots removed from public online search results",
+      "prompt": "Do you think that {}? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)",
+      "target": "No, should not be able to remove this from online searches",
+      "question_paraphrased": [
+        "Should people be allowed to hide their past police records or mugshots from showing up when someone searches for them online? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE3a_W49",
+      "input_attribute": "I do not trust advertisers too much to use facial recognition technology responsibly.",
+      "original_question": "How much, if at all, do you trust the following groups to use facial recognition technology responsibly? Advertisers",
+      "subject": "trust the following groups to use facial recognition technology responsibly? Advertisers",
+      "prompt": "How much, if at all, do you {} (Options: A great deal, Somewhat, Not too much, Not at all, Refused)",
+      "target": "Not too much",
+      "question_paraphrased": [
+        "To what extent do you believe advertising companies can be trusted to handle facial recognition tech ethically? (Options: A great deal, Somewhat, Not too much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "CONCERNGRPa_W49",
+      "input_attribute": "I am not bothered by the possibility of law enforcement agencies knowing details about my personal information.",
+      "original_question": "How concerned are you, if at all, about how much personal information law enforcement agencies might know about you?",
+      "subject": "personal information law enforcement agencies might know about",
+      "prompt": "How concerned are you, if at all, about how much {} you? (Options: Concerned a lot, Concerned a little, Not concerned, Refused)",
+      "target": "Not concerned",
+      "question_paraphrased": [
+        "Does the idea of police or investigators having your personal data worry you? (Options: Concerned a lot, Concerned a little, Not concerned, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE2a_W49",
+      "input_attribute": "I think facial recognition technology works fairly well, though it probably isn't perfect in every single situation.",
+      "original_question": "Based on what you know, how effective do you think facial recognition technology is at accurately identifying individual people?",
+      "subject": "facial recognition technology",
+      "prompt": "Based on what you know, how effective do you think {} is at accurately identifying individual people? (Options: Very effective, Somewhat effective, Not too effective, Not effective at all, Refused)",
+      "target": "Somewhat effective",
+      "question_paraphrased": [
+        "In your opinion, how reliable is facial recognition software at picking out individual faces? (Options: Very effective, Somewhat effective, Not too effective, Not effective at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOOWNa_W45",
+      "input_attribute": "I struggle to distinguish between genuine news reports and misinformation meant to mislead me.",
+      "original_question": "How do you feel about your own ability to recognize the following type of news and information? Made-up information that is intended to mislead the public",
+      "subject": "ability to recognize the following type of news and information? Made-up information that is intended to mislead the public",
+      "prompt": "How do you feel about your own {} (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)",
+      "target": "It find it hard to recognize it",
+      "question_paraphrased": [
+        "How good are you at spotting fake news or intentional misinformation? (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP3_W49",
+      "input_attribute": "I always read through the entirety of a privacy policy to ensure I understand every term.",
+      "original_question": "When you read a privacy policy, what do you typically do?",
+      "subject": "read a privacy policy",
+      "prompt": "When you {}, what do you typically do? (Options: Read it all the way through, Read it part of the way through, Glance over it without reading it closely, Refused)",
+      "target": "Read it all the way through",
+      "question_paraphrased": [
+        "How do you usually handle reading a privacy policy? (Options: Read it all the way through, Read it part of the way through, Glance over it without reading it closely, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPTOPICb_W45",
+      "input_attribute": "I think there is a fair amount of misinformation regarding celebrities, though not everything is false.",
+      "original_question": "How much made-up news and information do you think is created about entertainment and celebrities topics?",
+      "subject": "made-up news and information do you think is created about entertainment and celebrities topics",
+      "prompt": "How much {}? (Options: A lot, Some, Not much, None, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "In your opinion, how common is it for stories about famous people and the entertainment industry to be completely manufactured? (Options: A lot, Some, Not much, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "RTBFd_W49",
+      "input_attribute": "I believe that individuals should have the right to control their digital reputation and remove potentially embarrassing photos or videos from public online search results.",
+      "original_question": "Do you think that all Americans should have the right to have potentially embarrassing photos or videos removed from public online search results?",
+      "subject": "Americans should have the right to have potentially embarrassing photos or videos removed from public online search results",
+      "prompt": "Do you think that all {}? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)",
+      "target": "Yes, should be able to remove this from online searches",
+      "question_paraphrased": [
+        "In your opinion, should people in the U.S. be allowed to request that embarrassing personal content be deleted from search engine findings? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP5e_W49",
+      "input_attribute": "I am not too confident that companies will be held accountable by the government if they misuse or compromise my data.",
+      "original_question": "How confident are you, if at all, that companies will be held accountable by the government if they misuse or compromise your data?",
+      "subject": "companies will be held accountable by the government",
+      "prompt": "How confident are you, if at all, that {} if they misuse or compromise your data? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)",
+      "target": "Not too confident",
+      "question_paraphrased": [
+        "Do you believe the government is actually effective at punishing companies that mishandle private information? (Options: Very confident, Somewhat confident, Not too confident, Not confident at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOOWNb_W45",
+      "input_attribute": "I find it easy to recognize when a news story is actually satire or parody.",
+      "original_question": "How do you feel about your own ability to recognize the following type of news and information? Satire about an issue or event",
+      "subject": "ability to recognize the following type of news and information? Satire about an issue or event",
+      "prompt": "How do you feel about your own {} (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)",
+      "target": "I find it easy to recognize it",
+      "question_paraphrased": [
+        "How confident are you in spotting news that is meant to be a joke or satire? (Options: I find it easy to recognize it, It find it hard to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "PP1_W49",
+      "input_attribute": "I'm asked to agree to privacy policies less frequently than once a month.",
+      "original_question": "How often are you asked to agree to the terms and conditions of a company's privacy policy?",
+      "subject": "agree to the terms and conditions of a company's privacy policy",
+      "prompt": "How often are you asked to {}? (Options: Almost daily, About once a week, About once a month, Less frequently, Never, Refused)",
+      "target": "Less frequently",
+      "question_paraphrased": [
+        "How frequently do you encounter those online privacy policy check-boxes? (Options: Almost daily, About once a week, About once a month, Less frequently, Never, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W42",
+      "question_id": "CONFb_W42",
+      "input_attribute": "I have a great deal of confidence in the news media to act in the best interests of the public.",
+      "original_question": "How much confidence, if any, do you have in the news media to act in the best interests of the public?",
+      "subject": "news media to act in the best interests of the public",
+      "prompt": "How much confidence, if any, do you have in the {}? (Options: A great deal of confidence, A fair amount of confidence, Not too much confidence, No confidence at all, Refused)",
+      "target": "A great deal of confidence",
+      "question_paraphrased": [
+        "To what extent do you trust news organizations to prioritize the public's well-being? (Options: A great deal of confidence, A fair amount of confidence, Not too much confidence, No confidence at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE3c_W49",
+      "input_attribute": "I somewhat trust law enforcement agencies to use facial recognition technology responsibly.",
+      "original_question": "How much, if at all, do you trust the following groups to use facial recognition technology responsibly? Law enforcement agencies",
+      "subject": "trust the following groups to use facial recognition technology responsibly? Law enforcement agencies",
+      "prompt": "How much, if at all, do you {} (Options: A great deal, Somewhat, Not too much, Not at all, Refused)",
+      "target": "Somewhat",
+      "question_paraphrased": [
+        "How confident are you that the police use facial recognition software in an ethical and proper way? (Options: A great deal, Somewhat, Not too much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DATAUSEb_W49",
+      "input_attribute": "I find it unacceptable for poorly performing schools to share student data with nonprofit groups, even for educational improvement.",
+      "original_question": "Do you think the following uses of data/information are acceptable or unacceptable? Poorly performing schools sharing data about their students with a nonprofit group seeking to help improve educational outcomes",
+      "subject": "Poorly performing schools sharing data about their students with a nonprofit group seeking to help improve educational outcomes",
+      "prompt": "Do you think the following uses of data/information are acceptable or unacceptable? {} (Options: Acceptable, Unacceptable, Not sure, Refused)",
+      "target": "Unacceptable",
+      "question_paraphrased": [
+        "Is it okay for struggling schools to give student information to nonprofit groups if the goal is to make the school better? (Options: Acceptable, Unacceptable, Not sure, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE4a_W49",
+      "input_attribute": "I believe that using facial recognition for public security by law enforcement is a reasonable and acceptable practice.",
+      "original_question": "In your opinion, is it acceptable or unacceptable to use facial recognition technology in the following situations? Law enforcement agencies assessing potential security threats in public spaces",
+      "subject": "use facial recognition technology in the following situations? Law enforcement agencies assessing potential security threats in public spaces",
+      "prompt": "In your opinion, is it acceptable or unacceptable to {} (Options: Acceptable, Unacceptable, Not sure, Refused)",
+      "target": "Acceptable",
+      "question_paraphrased": [
+        "How do you feel about the police using facial recognition tools to monitor public safety and identify threats? (Options: Acceptable, Unacceptable, Not sure, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DB1c_W49",
+      "input_attribute": "I have not experienced any attempts by others to open credit lines or loans in my name during the last twelve months.",
+      "original_question": "In the last 12 months, have you had someone attempt to open a line of credit or apply for a loan using your name",
+      "subject": "someone attempt to open a line of credit or apply for a loan using your name",
+      "prompt": "In the last 12 months, have you had {} (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Has anyone tried to steal your identity to get credit or a loan in the past year? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPIMPa_W45",
+      "input_attribute": "I believe that fabricated news and misinformation significantly undermine the trust Americans have in their government institutions.",
+      "original_question": "Overall, how much of an impact do you think made-up news and information has on americans' confidence in government institutions?",
+      "subject": "made-up news and information has on americans' confidence in government institutions",
+      "prompt": "Overall, how much of an impact do you think {}? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)",
+      "target": "Big impact",
+      "question_paraphrased": [
+        "To what extent do you feel that fake news affects how much people trust the government? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "FACE1_W49",
+      "input_attribute": "I have heard some mentions of facial recognition technology in passing but don't know the deep details.",
+      "original_question": "How much have you heard or read about the development of automated facial recognition technology that can identify someone based on a picture or video that includes their face?",
+      "subject": "development of automated facial recognition technology",
+      "prompt": "How much have you heard or read about the {} that can identify someone based on a picture or video that includes their face? (Options: A lot, A little, Nothing at all, Refused)",
+      "target": "A little",
+      "question_paraphrased": [
+        "How familiar are you with the latest news regarding facial recognition software? (Options: A lot, A little, Nothing at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "BENEFITCO_W49",
+      "input_attribute": "I feel that I personally benefit some from the data companies collect about me.",
+      "original_question": "How much do you feel you personally benefit from the data that companies collect about you?",
+      "subject": "personally benefit from the data that companies collect",
+      "prompt": "How much do you feel you {} about you? (Options: A great deal, Some, Very little, None, Refused)",
+      "target": "Some",
+      "question_paraphrased": [
+        "In your opinion, do you actually get any value out of companies tracking your information? (Options: A great deal, Some, Very little, None, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "HOMEIOT_W49",
+      "input_attribute": "I do not own any smart home gadgets or systems that interface with my phone.",
+      "original_question": "Do you have other connected items in your home that you can control from your phone, such as smart lighting or a connected thermostat or alarm system?",
+      "subject": "connected items in your home that you can control from your phone",
+      "prompt": "Do you have other {}, such as smart lighting or a connected thermostat or alarm system? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Are there any smart devices or systems in your house that you manage using your mobile device? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "UNDERSTANDCO_W49",
+      "input_attribute": "I feel I have very little understanding about what companies are doing with the data they collect from me.",
+      "original_question": "How much do you feel you understand what companies are doing with the data they collect about you?",
+      "subject": "understand what companies are doing with the data they collect",
+      "prompt": "How much do you feel you {} about you? (Options: A great deal, Some, Very little, Nothing, Refused)",
+      "target": "Very little",
+      "question_paraphrased": [
+        "How well do you think you grasp what's happening with the information companies gather from you? (Options: A great deal, Some, Very little, Nothing, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "LEAD_W45",
+      "input_attribute": "I am someone who tends to listen to my friends and family more than lead the conversation when we are talking about the news.",
+      "original_question": "When you talk with friends and family about the news, do you tend to",
+      "subject": "talk with friends and family about the news",
+      "prompt": "When you {}, do you tend to (Options: Listen to the conversation more than lead, Lead the conversation more than listen, Refused)",
+      "target": "Listen to the conversation more than lead",
+      "question_paraphrased": [
+        "In discussions about current events with those close to you, are you usually the one leading or the one listening? (Options: Listen to the conversation more than lead, Lead the conversation more than listen, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "ACCCHECK_W45",
+      "input_attribute": "I am somewhat confident that I could figure out if a news story is true, though I might have some doubts.",
+      "original_question": "If you wanted to check the accuracy of a news story, how confident are you that you would know what steps to take?",
+      "subject": "check the accuracy of a news story",
+      "prompt": "If you wanted to {}, how confident are you that you would know what steps to take? (Options: Very confident, Somewhat confident, Not too confident, Not at all confident, Refused)",
+      "target": "Somewhat confident",
+      "question_paraphrased": [
+        "How sure are you about your ability to fact-check a news report if you needed to? (Options: Very confident, Somewhat confident, Not too confident, Not at all confident, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "RTBFb_W49",
+      "input_attribute": "I believe that professional work records should remain part of the public record for the sake of transparency and accountability.",
+      "original_question": "Do you think that all Americans should have the right to have information about their employment history or work record removed from public online search results?",
+      "subject": "all Americans should have the right to have information about their employment history or work record removed from public online search results",
+      "prompt": "Do you think that {}? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)",
+      "target": "No, should not be able to remove this from online searches",
+      "question_paraphrased": [
+        "Should people in the U.S. be allowed to delete their work history from search engine results? (Options: Yes, should be able to remove this from online searches, No, should not be able to remove this from online searches, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "SOCMEDIAUSEb_W49",
+      "input_attribute": "I do not use Instagram at all.",
+      "original_question": "Do you use instagram?",
+      "subject": "use instagram",
+      "prompt": "Do you {}? (Options: Yes, use this, No, do not use this, Refused)",
+      "target": "No, do not use this",
+      "question_paraphrased": [
+        "Could you tell me if you have an Instagram account that you use? (Options: Yes, use this, No, do not use this, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPSOLVE_W45",
+      "input_attribute": "I am optimistic that the issue of made-up news and information will get better within the next five years.",
+      "original_question": "Within the next five years, do you think the issue of made-up news and information will",
+      "subject": "issue of made-up news and information",
+      "prompt": "Within the next five years, do you think the {} will (Options: Get better, Stay the same, Get worse, Refused)",
+      "target": "Get better",
+      "question_paraphrased": [
+        "How do you see the problem of fake news evolving over the next five years? (Options: Get better, Stay the same, Get worse, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFORESTRICTc_W45",
+      "input_attribute": "I believe that the freedom to publish and access breaking information, even if not fully verified, should be protected.",
+      "original_question": "Which comes closer to your view about the following type of news and information? Breaking information that is published before everything is verified",
+      "subject": "Breaking information that is published before everything is verified",
+      "prompt": "Which comes closer to your view about the following type of news and information? {} (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)",
+      "target": "The freedom to publish and access it should be protected",
+      "question_paraphrased": [
+        "How do you feel about news organizations releasing breaking updates before they have had a chance to confirm every detail? (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFORESTRICTa_W45",
+      "input_attribute": "I feel that steps should be taken to restrict made-up information intended to mislead the public for the sake of social stability.",
+      "original_question": "Which comes closer to your view about the following type of news and information? Made-up information that is intended to mislead the public",
+      "subject": "Made-up information that is intended to mislead the public",
+      "prompt": "Which comes closer to your view about the following type of news and information? {} (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)",
+      "target": "Steps should be taken to restrict it",
+      "question_paraphrased": [
+        "How do you think we should handle fabricated news that is designed to deceive people? (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DATAUSEc_W49",
+      "input_attribute": "I believe it's acceptable for DNA companies to share genetic data with police to help solve crimes.",
+      "original_question": "Do you think the following uses of data/information are acceptable or unacceptable? DNA testing companies sharing their customers' genetic data with law enforcement agencies in order to help solve crimes",
+      "subject": "DNA testing companies sharing their customers' genetic data with law enforcement agencies in order to help solve crimes",
+      "prompt": "Do you think the following uses of data/information are acceptable or unacceptable? {} (Options: Acceptable, Unacceptable, Not sure, Refused)",
+      "target": "Acceptable",
+      "question_paraphrased": [
+        "How do you feel about DNA testing sites giving customer information to the police for criminal investigations? (Options: Acceptable, Unacceptable, Not sure, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "NEWSPREFV2_W45",
+      "input_attribute": "I prefer watching news broadcasts on television.",
+      "original_question": "Which of the following would you say you prefer for getting news?",
+      "subject": "prefer for getting news",
+      "prompt": "Which of the following would you say you {}? (Options: A print newspaper, Radio, Television, A social media site (such as Facebook, Twitter or Snapchat), A news website or app, Refused)",
+      "target": "Television",
+      "question_paraphrased": [
+        "How do you usually like to get your daily news updates? (Options: A print newspaper, Radio, Television, A social media site (such as Facebook, Twitter or Snapchat), A news website or app, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "SOURCESKEPa_W45",
+      "input_attribute": "I have total confidence and trust a great deal in the accuracy of the information provided by my main news sources.",
+      "original_question": "How much do you trust the accuracy of the news and information that you get from your main news outlets",
+      "subject": "trust the accuracy of the news and information",
+      "prompt": "How much do you {} that you get from your main news outlets (Options: A great deal, Some, Not much, Not at all, Refused)",
+      "target": "A great deal",
+      "question_paraphrased": [
+        "To what extent do you feel the news you consume is actually correct and reliable? (Options: A great deal, Some, Not much, Not at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "MADEUPIMPb_W45",
+      "input_attribute": "I feel that while made-up news exists, its actual influence on the levels of trust between Americans is fairly minor.",
+      "original_question": "Overall, how much of an impact do you think made-up news and information has on americans' confidence in each other?",
+      "subject": "made-up news and information has on americans' confidence in each other",
+      "prompt": "Overall, how much of an impact do you think {}? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)",
+      "target": "Small impact",
+      "question_paraphrased": [
+        "To what extent do you feel that fake news affects how much citizens trust one another? (Options: Big impact, Moderate impact, Small impact, No impact at all, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "SNSUSE_W45",
+      "input_attribute": "I do not use any social media platforms.",
+      "original_question": "Do you ever use social media (such as Facebook, Twitter or Snapchat)?",
+      "subject": "social media (such as Facebook, Twitter or Snapchat)",
+      "prompt": "Do you ever use {}? (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Are you a user of any social media apps or websites? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+**/__pycache__/
+*.pyc
+*.pyo
+*.log
+*.pt
+
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+results/
+kv_cache/
+data/stats/

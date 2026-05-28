@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "QKEY": "c120_007",
+    "OWNAGE_1_W26": "40.0",
+    "CREGION": "Midwest",
+    "AGE": "50-64",
+    "SEX": "Male",
+    "EDUCATION": "High school graduate",
+    "CITIZEN": "Yes",
+    "MARITAL": "Never been married",
+    "RELIG": "Nothing in particular",
+    "RELIGATTEND": "Never",
+    "POLPARTY": "Democrat",
+    "INCOME": "Less than $30,000",
+    "POLIDEOLOGY": "Conservative",
+    "RACE": "White",
+    "respondent_id": "c120_007"
+  },
+  "entries": [
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DB1a_W49",
+      "input_attribute": "I have not had any fraudulent charges on my debit or credit card in the last 12 months.",
+      "original_question": "In the last 12 months, have you had someone put fraudulent charges on your debit or credit card",
+      "subject": "had someone put fraudulent charges on your debit or credit card",
+      "prompt": "In the last 12 months, have you {} (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "In the past year, have you noticed any unauthorized transactions on your credit or debit cards? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOKNOWd_W45",
+      "input_attribute": "I feel that it is unreasonable to expect the typical person to distinguish between neutral facts and strategically framed information in today's media landscape.",
+      "original_question": "How do you feel about the average American's ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+      "subject": "average American's ability to recognize the following type of news and information? Factual information presented to favor one side of an issue",
+      "prompt": "How do you feel about the {} (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)",
+      "target": "It is too much to ask of the average American to be able to recognize it",
+      "question_paraphrased": [
+        "Should we expect regular people to be able to spot when facts are being used to push a specific political agenda? (Options: The average American should be able to recognize it, It is too much to ask of the average American to be able to recognize it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DB1c_W49",
+      "input_attribute": "I have not experienced any attempts by others to open credit lines or loans in my name during the last twelve months.",
+      "original_question": "In the last 12 months, have you had someone attempt to open a line of credit or apply for a loan using your name",
+      "subject": "someone attempt to open a line of credit or apply for a loan using your name",
+      "prompt": "In the last 12 months, have you had {} (Options: Yes, No, Refused)",
+      "target": "No",
+      "question_paraphrased": [
+        "Has anyone tried to steal your identity to get credit or a loan in the past year? (Options: Yes, No, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFORESTRICTe_W45",
+      "input_attribute": "I think that steps should be taken to restrict altered or made-up videos and images intended to mislead the public, as I prioritize the safety and integrity of information over absolute freedom for deceptive content.",
+      "original_question": "Which comes closer to your view about the following type of news and information? A video or image that is altered or made up to mislead the public",
+      "subject": "video or image that is altered or made up to mislead the public",
+      "prompt": "Which comes closer to your view about the following type of news and information? A {} (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)",
+      "target": "Steps should be taken to restrict it",
+      "question_paraphrased": [
+        "When it comes to videos or images that have been manipulated to trick people, do you think they should be allowed online or should there be efforts to limit them? (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFOWHYd_W45",
+      "input_attribute": "I think that while humor plays a small part in the creation of fake news, it isn't the main driving force.",
+      "original_question": "How much do you think to be funny is a reason why made-up news and information is created?",
+      "subject": "funny is a reason why made-up news and information is created",
+      "prompt": "How much do you think to be {}? (Options: Major reason, Minor reason, Not a reason, Refused)",
+      "target": "Minor reason",
+      "question_paraphrased": [
+        "Do you think people create fake news stories just to be funny or to entertain others? (Options: Major reason, Minor reason, Not a reason, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "UNDERSTANDCO_W49",
+      "input_attribute": "I feel I understand nothing about what companies are doing with the data they collect from me.",
+      "original_question": "How much do you feel you understand what companies are doing with the data they collect about you?",
+      "subject": "understand what companies are doing with the data they collect",
+      "prompt": "How much do you feel you {} about you? (Options: A great deal, Some, Very little, Nothing, Refused)",
+      "target": "Nothing",
+      "question_paraphrased": [
+        "How well do you think you grasp what's happening with the information companies gather from you? (Options: A great deal, Some, Very little, Nothing, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "NEWSPREFV2_W45",
+      "input_attribute": "I prefer watching news broadcasts on television.",
+      "original_question": "Which of the following would you say you prefer for getting news?",
+      "subject": "prefer for getting news",
+      "prompt": "Which of the following would you say you {}? (Options: A print newspaper, Radio, Television, A social media site (such as Facebook, Twitter or Snapchat), A news website or app, Refused)",
+      "target": "Television",
+      "question_paraphrased": [
+        "How do you usually like to get your daily news updates? (Options: A print newspaper, Radio, Television, A social media site (such as Facebook, Twitter or Snapchat), A news website or app, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W45",
+      "question_id": "INFORESTRICTb_W45",
+      "input_attribute": "I think that steps should be taken to restrict satirical news and information to prevent misinformation.",
+      "original_question": "Which comes closer to your view about the following type of news and information? Satire about an issue or event",
+      "subject": "Satire about an issue or event",
+      "prompt": "Which comes closer to your view about the following type of news and information? {} (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)",
+      "target": "Steps should be taken to restrict it",
+      "question_paraphrased": [
+        "How do you think we should handle news satire and parody regarding current events? (Options: The freedom to publish and access it should be protected, Steps should be taken to restrict it, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W32",
+      "question_id": "MISINFT_W32",
+      "input_attribute": "I believe that technology platforms have a responsibility to filter out misinformation to prevent the spread of false claims.",
+      "original_question": "Thinking about news and information online, including social media which comes closer to your own view?",
+      "subject": "news and information online, including social media",
+      "prompt": "Thinking about {} which comes closer to your own view? (Options: Technology companies should take steps to restrict false information online, People's freedom to publish and access information should be protected, Refused)",
+      "target": "Technology companies should take steps to restrict false information online",
+      "question_paraphrased": [
+        "When it comes to the internet and social media, do you think tech companies should limit fake news or should free speech be the priority? (Options: Technology companies should take steps to restrict false information online, People's freedom to publish and access information should be protected, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "political issues"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W41",
+      "question_id": "SOLVPROBf_W41",
+      "input_attribute": "I think the news media will have a somewhat positive impact on solving our national problems.",
+      "original_question": "In the future, what kind of an impact do you think the news media will have in solving the biggest problems facing the country?",
+      "subject": "news media will have in solving the biggest problems",
+      "prompt": "In the future, what kind of an impact do you think the {} facing the country? (Options: A very positive impact, A somewhat positive impact, A somewhat negative impact, A very negative impact, Refused)",
+      "target": "A somewhat positive impact",
+      "question_paraphrased": [
+        "Looking ahead, how much do you think the news media will help or hinder the process of fixing our country's major issues? (Options: A very positive impact, A somewhat positive impact, A somewhat negative impact, A very negative impact, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "future"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "GOVREGV1_W49",
+      "input_attribute": "I believe that the current laws are insufficient and that the government needs to implement stricter rules to protect consumer data.",
+      "original_question": "How much government regulation of what companies can do with their customers' personal information do you think there should be?",
+      "subject": "government regulation of what companies can do with their customers' personal information",
+      "prompt": "How much {} do you think there should be? (Options: More regulation, Less regulation, About the same amount, Refused)",
+      "target": "More regulation",
+      "question_paraphrased": [
+        "What's your take on the level of government rules regarding how businesses handle user data? (Options: More regulation, Less regulation, About the same amount, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "political issues"
+      ]
+    },
+    {
+      "wave": "American_Trends_Panel_W49",
+      "question_id": "DATAUSEa_W49",
+      "input_attribute": "I believe it is acceptable for the government to collect data on all Americans to identify potential terrorist threats.",
+      "original_question": "Do you think the following uses of data/information are acceptable or unacceptable? The government collecting data about all Americans to assess who might be a potential terrorist threat",
+      "subject": "government collecting data about all Americans to assess who might be a potential terrorist threat",
+      "prompt": "Do you think the following uses of data/information are acceptable or unacceptable? The {} (Options: Acceptable, Unacceptable, Not sure, Refused)",
+      "target": "Acceptable",
+      "question_paraphrased": [
+        "Is it okay for the government to gather information on every citizen to help catch potential terrorists? (Options: Acceptable, Unacceptable, Not sure, Refused)"
+      ],
+      "topic_cg": [
+        "news, social media, data, privacy",
+        "crime/security"
+      ]
+    }
+  ]
+}
