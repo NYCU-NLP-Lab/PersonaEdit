@@ -43,6 +43,58 @@ data/edit_sets/k${k}_s${s}/
 data/eval_sets/test/k${k}_s${s}/
 ```
 
+## FERMI
+
+Run FERMI on the clustered split produced by `scripts/run_clustering.py`:
+
+```bash
+python scripts/run_fermi.py \
+  --num_clusters "$k" \
+  --sample_size "$s"
+```
+
+By default this reads:
+
+```text
+data/edit_sets/k${k}_s${s}/
+data/eval_sets/test/k${k}_s${s}/
+```
+
+and writes:
+
+```text
+results/fermi/k${k}_s${s}/
+  <respondent_id>/
+    optimization_log.json
+    test_inference_results.json
+```
+
+Useful smoke-test options:
+
+```bash
+python scripts/run_fermi.py \
+  --num_clusters "$k" \
+  --sample_size "$s" \
+  --respondent_limit 1 \
+  --test_limit 2 \
+  --optimization_iterations 1
+```
+
+Evaluate FERMI predictions by parsing each prediction into one of the prompt
+options and comparing it with `target`:
+
+```bash
+python scripts/run_fermi_evaluation.py --config-name k${k}_s${s}
+```
+
+Output:
+
+```text
+results/fermi_evaluation/k${k}_s${s}/
+  summary.json
+  <respondent_id>_eval.json
+```
+
 
 ### Human-Labeled Category Split
 

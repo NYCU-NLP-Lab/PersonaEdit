@@ -10,6 +10,8 @@ results/clustering/*
 results/editing/*
 results/evaluation/*
 results/evaluation_metrics/*
+results/fermi/*
+results/fermi_evaluation/*
 !results/clustering/.gitkeep
 !results/editing/.gitkeep
 !results/evaluation/.gitkeep
@@ -20,7 +22,10 @@ AlphaEdit/data/stats/
 data/private/
 data/clustered_train/*
 data/edit_sets/k3_s20/
+data/edit_sets/k13_s20/
 data/eval_sets/test/k3_s20/
+data/eval_sets/test/k13_s20/
+data/fermi_embedding_cache/*
 data/stats/*
 !data/splits/train/.gitkeep
 !data/splits/test/.gitkeep
