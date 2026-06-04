@@ -10,7 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 def main():
     command = [
         sys.executable,
-        str(PROJECT_ROOT / "analysis/compare_experiment_consistency.py"),
+        str(PROJECT_ROOT / "analysis/cluster_consistency.py"),
         *sys.argv[1:],
     ]
     completed = subprocess.run(command, cwd=PROJECT_ROOT)
