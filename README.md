@@ -69,17 +69,6 @@ results/fermi/k${k}_s${s}/
     test_inference_results.json
 ```
 
-Useful smoke-test options:
-
-```bash
-python scripts/run_fermi.py \
-  --num_clusters "$k" \
-  --sample_size "$s" \
-  --respondent_limit 1 \
-  --test_limit 2 \
-  --optimization_iterations 1
-```
-
 Evaluate FERMI predictions by parsing each prediction into one of the prompt
 options and comparing it with `target`:
 
@@ -93,6 +82,40 @@ Output:
 results/fermi_evaluation/k${k}_s${s}/
   summary.json
   <respondent_id>_eval.json
+```
+
+## Experiment Consistency Analysis
+
+Compare two evaluated experiment directories and correlate each respondent's
+target-answer cluster consistency with the accuracy difference between the
+experiments:
+
+```bash
+python scripts/run_cluster_consistency.py \
+  --experiment-a results/evaluation/experiment_a/test/k18_s200 \
+  --experiment-b results/evaluation/experiment_b/test/k18_s200 \
+  --name-a experiment_a \
+  --name-b experiment_b \
+  --output-dir results/analysis/experiment_a_vs_b_test
+```
+
+The analysis pairs matching respondent/question IDs and defines improvement as:
+
+```text
+accuracy_improvement = accuracy_experiment_b - accuracy_experiment_a
+```
+
+Both result directories should contain evaluated entries with `cluster_id`,
+`target`, and `is_correct`. If `is_correct` is absent, pass `--answer-key-a`
+and/or `--answer-key-b`.
+
+Output:
+
+```text
+results/analysis/experiment_a_vs_b_test/
+  respondent_cluster_consistency.csv
+  respondent_consistency_accuracy.csv
+  summary.json
 ```
 
 

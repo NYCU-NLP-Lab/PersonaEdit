@@ -12,6 +12,7 @@ results/evaluation/*
 results/evaluation_metrics/*
 results/fermi/*
 results/fermi_evaluation/*
+results/analysis/*
 !results/clustering/.gitkeep
 !results/editing/.gitkeep
 !results/evaluation/.gitkeep
