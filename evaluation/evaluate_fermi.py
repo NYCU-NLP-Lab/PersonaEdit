@@ -3,69 +3,11 @@ import argparse
 import json
 import re
 from pathlib import Path
+from utils import load_json, save_json, extract_respondent_id
+from option_parser import extract_options, parse_option_answer, is_correct_answer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-
-
-def load_json(path):
-    with path.open(encoding="utf-8") as f:
-        return json.load(f)
-
-
-def save_json(path, payload):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2, ensure_ascii=False)
-
-
-def normalize_text(text):
-    text = str(text or "").lower()
-    text = re.sub(r"[^a-z0-9]+", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
-
-
-def extract_options(entry):
-    prompt = str(entry.get("prompt", ""))
-    match = re.search(r"\(Options:\s*(.*?)\)\s*$", prompt)
-    if not match:
-        return []
-    return [option.strip() for option in match.group(1).split(",") if option.strip()]
-
-
-def parse_option_answer(generated, options):
-    generated_norm = normalize_text(generated)
-    if not generated_norm:
-        return None
-
-    normalized_options = [(option, normalize_text(option)) for option in options]
-    for option, option_norm in normalized_options:
-        if generated_norm == option_norm:
-            return option
-
-    matches = []
-    for option, option_norm in normalized_options:
-        if generated_norm.startswith(option_norm) or re.search(rf"\b{re.escape(option_norm)}\b", generated_norm):
-            matches.append((len(option_norm), option))
-
-    if not matches:
-        return None
-    matches.sort(reverse=True)
-    return matches[0][1]
-
-
-def is_correct(parsed_answer, target):
-    if parsed_answer is None:
-        return False
-    return normalize_text(parsed_answer) == normalize_text(target)
-
-
-def extract_respondent_id(path):
-    if path.parent.name:
-        return path.parent.name
-    match = re.search(r"(\d{5,})", path.stem)
-    return match.group(1) if match else None
-
 
 def iter_result_files(input_path):
     if input_path.is_file():
@@ -84,7 +26,7 @@ def evaluate_file(input_path):
         parsed_answer = parse_option_answer(prediction, options)
         result = dict(entry)
         result["parsed_fermi_answer"] = parsed_answer
-        result["is_correct"] = is_correct(parsed_answer, entry.get("target", ""))
+        result["is_correct"] = is_correct_answer(parsed_answer, entry.get("target", ""))
         evaluated.append(result)
 
     total = len(evaluated)
@@ -105,7 +47,6 @@ def evaluate_file(input_path):
         "entries": evaluated,
     }
 
-
 def summarize(file_summaries):
     total = sum(item["total"] for item in file_summaries)
     correct = sum(item["correct"] for item in file_summaries)
@@ -121,7 +62,6 @@ def summarize(file_summaries):
         },
         "files": file_summaries,
     }
-
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Evaluate FERMI predictions against target options.")

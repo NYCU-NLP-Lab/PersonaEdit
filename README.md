@@ -29,11 +29,11 @@ data/splits/test/
 Create edit/eval sets:
 
 ```bash
-python scripts/run_clustering.py \
+python clustering/cluster_train.py \
   --train_dir data/splits/train \
   --test_dir data/splits/test \
   --num_clusters "$k" \
-  --sample_size "$s" \
+  --sample_size "$s"
 ```
 
 Output:
@@ -45,10 +45,10 @@ data/eval_sets/test/k${k}_s${s}/
 
 ## FERMI
 
-Run FERMI on the clustered split produced by `scripts/run_clustering.py`:
+Run FERMI on the clustered split produced by `clustering/cluster_train.py`:
 
 ```bash
-python scripts/run_fermi.py \
+python fermi/run_fermi.py \
   --num_clusters "$k" \
   --sample_size "$s"
 ```
@@ -73,7 +73,7 @@ Evaluate FERMI predictions by parsing each prediction into one of the prompt
 options and comparing it with `target`:
 
 ```bash
-python scripts/run_fermi_evaluation.py --config-name k${k}_s${s}
+python evaluation/evaluate_fermi.py --config-name k${k}_s${s}
 ```
 
 Output:
@@ -83,55 +83,6 @@ results/fermi_evaluation/k${k}_s${s}/
   summary.json
   <respondent_id>_eval.json
 ```
-
-## Experiment Consistency Analysis
-
-Compare two evaluated experiment directories and correlate each respondent's
-target-answer cluster consistency with the accuracy difference between the
-experiments:
-
-```bash
-python scripts/run_cluster_consistency.py \
-  --experiment-a results/evaluation/experiment_a/test/k18_s200 \
-  --experiment-b results/evaluation/experiment_b/test/k18_s200 \
-  --name-a experiment_a \
-  --name-b experiment_b \
-  --output-dir results/analysis/experiment_a_vs_b_test
-```
-
-The analysis pairs matching respondent/question IDs and defines improvement as:
-
-```text
-accuracy_improvement = accuracy_experiment_b - accuracy_experiment_a
-```
-
-Both result directories should contain evaluated entries with `cluster_id`,
-`target`, and `is_correct`. If `is_correct` is absent, pass `--answer-key-a`
-and/or `--answer-key-b`.
-
-Output:
-
-```text
-results/analysis/experiment_a_vs_b_test/
-  respondent_cluster_consistency.csv
-  respondent_consistency_accuracy.csv
-  summary.json
-```
-
-
-### Human-Labeled Category Split
-
-This split is based on human-labeled semantic topic/category annotations, not
-hidden-state clustering.
-
-```text
-data/edit_sets/cat120_120/
-data/eval_sets/same_topic/cat120_120/
-data/eval_sets/other_topics/cat120_120/
-```
-
-Respondents are anonymized as `c120_001` through `c120_010`. Each edit set has
-120 edit examples.
 
 ## Editing
 
@@ -168,7 +119,7 @@ results/editing/AlphaEdit/run_XXX/
 General prompt:
 
 ```bash
-python scripts/run_evaluation.py \
+python evaluation/evaluate.py \
   --eval-root data/eval_sets \
   --eval-config k${k}_s${s} \
   --weights-root results/editing/AlphaEdit/run_XXX \
@@ -191,7 +142,7 @@ results/evaluation/<run_name>/
 Compute ordinal MMAE and CEM:
 
 ```bash
-python scripts/run_ordinal_metrics.py \
+python evaluation/ordinal_metrics.py \
   --input results/evaluation/k${k}_s${s}_run_XXX \
   --distribution-dir data/OpinionQA/distribution \
   --output-dir results/evaluation_metrics/k${k}_s${s}_run_XXX

@@ -17,17 +17,14 @@ DEFAULT_MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
 DEFAULT_FIXED_DEMO_COUNT = 40
 DEFAULT_SCORING_COUNT = 160
 
-
 sys.path.insert(0, str(PROJECT_ROOT))
 load_dotenv(PROJECT_ROOT / ".env")
 sys.stdout.reconfigure(line_buffering=True)
-
 
 def cleanup_cuda():
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
-
 
 def format_duration(seconds):
     seconds = int(max(0, seconds))
@@ -195,10 +192,7 @@ def build_model(args):
         device_map=args.device_map,
         pred_max_new_tokens=args.pred_max_new_tokens,
         optimize_max_new_tokens=args.optimize_max_new_tokens,
-        attention_implementation=args.attention_impl,
-        matmul_precision=args.matmul_precision,
     )
-
 
 def run_fermi(args):
     from fermi.core import FERMI
@@ -343,8 +337,6 @@ def parse_args():
     parser.add_argument("--optimize_max_input_tokens", type=int, default=None)
     parser.add_argument("--pred_max_new_tokens", type=int, default=20)
     parser.add_argument("--optimize_max_new_tokens", type=int, default=128)
-    parser.add_argument("--attention_impl", type=str, default=os.getenv("FERMI_ATTENTION_IMPL"))
-    parser.add_argument("--matmul_precision", type=str, default=os.getenv("FERMI_MATMUL_PRECISION"))
     return parser.parse_args()
 
 

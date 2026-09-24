@@ -96,25 +96,59 @@ def extract_feature(entry, tokenizer, model, entry_layer):
     return feature.detach().cpu().float().numpy()
 
 
-def extract_features(entries_by_qid, tokenizer, model, entry_layer):
+def extract_features(entries_by_qid, tokenizer, model, entry_layer, batch_size=8):
     question_ids = list(entries_by_qid.keys())
     features = []
 
     print(f"Extracting features for {len(question_ids)} unique questions.")
-    for idx, question_id in enumerate(question_ids, start=1):
-        features.append(extract_feature(entries_by_qid[question_id], tokenizer, model, entry_layer))
-        if idx % 50 == 0:
-            print(f"  processed {idx}/{len(question_ids)}")
+
+    for start in range(0, len(question_ids), batch_size):
+        batch_qids = question_ids[start:start + batch_size]
+        batch_entries = [entries_by_qid[qid] for qid in batch_qids]
+
+        full_prompts = []
+        target_indices = []
+
+        for entry in batch_entries:
+            full_prompt, _ = format_prompt(entry)
+            full_prompts.append(full_prompt)
+            target_indices.append(subject_end_index(entry, tokenizer))
+
+        inputs = tokenizer(
+            full_prompts,
+            return_tensors="pt",
+            padding=True,
+            truncation=True,
+        ).to(model.device)
+
+        with torch.no_grad():
+            outputs = model(
+                **inputs,
+                output_hidden_states=True,
+            )
+
+        hidden_states = outputs.hidden_states[entry_layer]
+
+        for i, target_index in enumerate(target_indices):
+            feature = hidden_states[i, target_index, :]
+            features.append(
+                feature.detach().cpu().float().numpy()
+            )
+
+        processed = min(start + batch_size, len(question_ids))
+        print(f"  processed {processed}/{len(question_ids)}")
 
     return np.asarray(features), question_ids
 
 
 def load_model_and_layer(model_name: str, hparams_path: Path):
     hparams = load_json(hparams_path)
-    target_layers = hparams.get("layers", [3, 4, 5, 6, 7, 8])
+    target_layers = hparams.get("layers", [4, 5, 6, 7, 8])
     entry_layer = target_layers[0] - 1
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         torch_dtype=torch.float32,
@@ -197,8 +231,9 @@ def run_clustering(args):
 
     tokenizer, model, entry_layer = load_model_and_layer(args.model_name, args.hparams)
 
-    train_unique = load_unique_entries(train_files)
-    train_features, train_qids = extract_features(train_unique, tokenizer, model, entry_layer)
+    # train_unique = load_unique_entries(train_files)
+    train_unique = load_unique_entries([train_files[0]])
+    train_features, train_qids = extract_features(train_unique, tokenizer, model, entry_layer,batch_size=args.feature_batch_size)
     normalizer = Normalizer(norm="l2")
     train_features = normalizer.fit_transform(train_features)
 
@@ -216,7 +251,7 @@ def run_clustering(args):
     test_mapping = {}
     if test_files:
         test_unique = load_unique_entries(test_files)
-        test_features, test_qids = extract_features(test_unique, tokenizer, model, entry_layer)
+        test_features, test_qids = extract_features(test_unique, tokenizer, model, entry_layer,batch_size=args.feature_batch_size)
         test_features = normalizer.transform(test_features)
         test_labels = kmeans.predict(test_features)
         test_mapping = {qid: int(cluster_id) for qid, cluster_id in zip(test_qids, test_labels)}
@@ -255,6 +290,7 @@ def parse_args():
     parser.add_argument("--respondent_ids", nargs="+", default=None, help="Only use specific respondent ids, e.g. p001 p002 p003.")
     parser.add_argument("--random_state", type=int, default=42)
     parser.add_argument("--n_init", type=int, default=10)
+    parser.add_argument("--feature_batch_size",type=int,default=8,help="Batch size for LLM feature extraction.")
     return parser.parse_args()
 
 

@@ -7,13 +7,10 @@ import re
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean
-
+from utils import load_json, save_json
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-# A compact release whitelist of ordered survey scales used by OpinionQA-style
-# questions. This follows the metric logic from 30_respondents_for_editing:
-# score only questions whose options are clearly ordinal.
 ORDERED_SCALES = [
     ["A great deal", "Some", "Not much", "Not at all"],
     ["A great deal", "A fair amount", "Not too much", "Not at all"],
@@ -65,18 +62,6 @@ ORDERED_SCALES = [
     ["Definitely agree", "Somewhat agree", "Somewhat disagree", "Definitely disagree"],
     ["Helps a lot", "Helps a little", "Neither helps nor hurts", "Hurts a little", "Hurts a lot"],
 ]
-
-
-def load_json(path):
-    with path.open(encoding="utf-8") as f:
-        return json.load(f)
-
-
-def save_json(path, payload):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2, ensure_ascii=False)
-
 
 def normalize(text):
     text = str(text or "").strip().lower()

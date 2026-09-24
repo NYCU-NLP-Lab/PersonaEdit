@@ -18,7 +18,6 @@ def _parse_max_memory(max_memory_text):
         max_memory[key] = value
     return max_memory
 
-
 class StopOnSubstrings(StoppingCriteria):
     def __init__(self, tokenizer, stop_strings):
         self.stop_ids = [
@@ -42,15 +41,13 @@ class LlamaLocal:
         model_id="meta-llama/Llama-3.1-8B-Instruct",
         generation_batch_size=4,
         optimize_batch_size=1,
-        max_memory=None,
-        offload_folder="offload",
         use_cache=False,
+        max_memory=None,
         optimize_max_input_tokens=None,
         device_map="auto",
+        offload_folder="offload",
         pred_max_new_tokens=20,
         optimize_max_new_tokens=256,
-        attention_implementation=None,
-        matmul_precision=None,
     ):
         self.generation_batch_size = max(1, generation_batch_size)
         self.optimize_batch_size = max(1, optimize_batch_size)
@@ -58,16 +55,9 @@ class LlamaLocal:
         self.optimize_max_input_tokens = optimize_max_input_tokens
         self.pred_max_new_tokens = max(1, pred_max_new_tokens)
         self.optimize_max_new_tokens = max(1, optimize_max_new_tokens)
-        self.attention_implementation = attention_implementation or os.getenv("FERMI_ATTENTION_IMPL")
-        self.matmul_precision = matmul_precision or os.getenv("FERMI_MATMUL_PRECISION")
-
-        if self.matmul_precision:
-            torch.set_float32_matmul_precision(self.matmul_precision)
-
         self.tokenizer = AutoTokenizer.from_pretrained(model_id)
-        self.tokenizer.padding_side = "left" 
+        self.tokenizer.padding_side = "left"
         self.tokenizer.pad_token = self.tokenizer.eos_token
-
         max_memory = max_memory or _parse_max_memory(os.getenv("FERMI_MAX_MEMORY"))
         if max_memory:
             os.makedirs(offload_folder, exist_ok=True)
@@ -77,106 +67,34 @@ class LlamaLocal:
             torch_dtype=torch.float32,
             device_map=device_map,
             attn_implementation=self._resolve_attn_impl(),
-            max_memory=max_memory,
-            offload_folder=offload_folder,
-            offload_state_dict=True,
             low_cpu_mem_usage=True,
         )
-        self.model.eval()
-        self._log_device_map()
-        self.tokenizer.pad_token = self.tokenizer.eos_token
 
-    def _resolve_attn_impl(self):
-        if not self.attention_implementation:
-            return None
-        value = self.attention_implementation.strip().lower()
-        if value in {"none", "default", "auto"}:
-            return None
-        if value in {"flash", "flash_attention_2", "flash-attention-2"}:
-            return "flash_attention_2"
-        if value in {"sdpa", "scaled_dot_product_attention"}:
-            return "sdpa"
-        return self.attention_implementation
+        self.model.eval()
 
     def _cleanup_cuda(self):
         gc.collect()
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
 
-    def _log_device_map(self):
-        hf_device_map = getattr(self.model, "hf_device_map", None)
-        if not hf_device_map:
-            print("[Device map] unavailable", flush=True)
-            return
-
-        counts = {}
-        for module_name, device in hf_device_map.items():
-            counts[str(device)] = counts.get(str(device), 0) + 1
-        summary = ", ".join(f"{device}: {count} modules" for device, count in sorted(counts.items()))
-        print(f"[Device map] {summary}", flush=True)
-        for module_name, device in hf_device_map.items():
-            print(f"[Device map] {module_name} -> {device}", flush=True)
-
-    def _log_cuda_memory(self, label):
-        if not torch.cuda.is_available():
-            return
-        parts = []
-        for device_index in range(torch.cuda.device_count()):
-            free_bytes, total_bytes = torch.cuda.mem_get_info(device_index)
-            allocated = torch.cuda.memory_allocated(device_index)
-            reserved = torch.cuda.memory_reserved(device_index)
-            parts.append(
-                f"cuda:{device_index} "
-                f"free={free_bytes / 1024**3:.2f}GiB "
-                f"total={total_bytes / 1024**3:.2f}GiB "
-                f"allocated={allocated / 1024**3:.2f}GiB "
-                f"reserved={reserved / 1024**3:.2f}GiB"
-            )
-        print(f"[CUDA memory | {label}] " + " | ".join(parts), flush=True)
-
     def _extract_prompt_candidate(self, content):
-        final_match = re.search(r"FINAL:\s*(.+?)(?:\s+END\b|$)", content, re.IGNORECASE | re.DOTALL)
+        final_match = re.search(
+            r"FINAL:\s*(.+?)(?:\s+END\b|$)",
+            content,
+            re.IGNORECASE | re.DOTALL,
+        )
         if final_match:
             return self._clean_prompt_candidate(final_match.group(1))
-
-        tag_candidates = re.findall(r"<NEW_TEXT>\s*(.*?)\s*</NEW_TEXT>", content, re.DOTALL | re.IGNORECASE)
-        bracket_candidates = re.findall(r"\[(.*?)\]", content, re.DOTALL)
-        candidates = tag_candidates + bracket_candidates
-
-        cleaned = [text for text in (self._clean_prompt_candidate(c) for c in candidates) if text]
-        if cleaned:
-            cleaned.sort(key=len, reverse=True)
-            return cleaned[0]
 
         return self._clean_prompt_candidate(content)
 
     def _clean_prompt_candidate(self, text):
         text = text.strip()
-        text = re.sub(r"^```(?:text)?\s*", "", text, flags=re.IGNORECASE)
-        text = re.sub(r"\s*```$", "", text)
-        text = re.sub(r"</?NEW_TEXT>", "", text, flags=re.IGNORECASE)
-        text = re.sub(r"\s+END\s*$", "", text, flags=re.IGNORECASE)
-        text = text.splitlines()[0].strip()
-        text = re.sub(r"^(?:new text|text|prompt)\s*:\s*", "", text, flags=re.IGNORECASE)
         text = text.strip().strip("\"'")
 
         if not text:
             return None
-        if text.isdigit():
-            return None
 
-        normalized = re.sub(r"\s+", " ", text).strip().lower()
-        invalid_values = {
-            "<ins>",
-            "<text with score 1.0>",
-            "text",
-            "prompt",
-            "insert new text here",
-            "your new prompt here",
-            "new prompt here",
-        }
-        if normalized in invalid_values:
-            return None
         if len(text) < 40:
             return None
 
@@ -189,7 +107,7 @@ class LlamaLocal:
         match = re.search(r'\(Options:\s*(.*?)\)', question_text)
         if match:
             options_str = match.group(1)
-            options = [opt.strip() for opt in options_str.split(',')]
+            options = [opt.strip() for opt in options_str.split('|')]
             return sorted(options, key=len, reverse=True)
         return []
     
@@ -238,7 +156,7 @@ class LlamaLocal:
                 
                 matched = False
                 for opt in options_list:
-                    if res_clean.startswith(opt) or opt in res_clean:
+                    if opt in res_clean:
                         all_results.append(opt)
                         matched = True
                         break
@@ -283,7 +201,6 @@ class LlamaLocal:
             "not answer choices, and not a description of the output format. "
             "Do not write placeholders, numbering, examples, XML tags, or explanations. "
             "Output exactly one line in this format: FINAL: <your complete instruction text> END. "
-            "Keep it under 80 words."
         )
 
         full_flat_prompt = (
