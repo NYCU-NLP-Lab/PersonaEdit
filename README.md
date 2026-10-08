@@ -137,27 +137,6 @@ results/evaluation/<run_name>/
   test/...
 ```
 
-## Ordinal Metrics
-
-Compute ordinal MMAE and CEM:
-
-```bash
-python evaluation/ordinal_metrics.py \
-  --input results/evaluation/k${k}_s${s}_run_XXX \
-  --distribution-dir data/OpinionQA/distribution \
-  --output-dir results/evaluation_metrics/k${k}_s${s}_run_XXX
-```
-
-Outputs:
-
-```text
-ordinal_metrics.csv
-ordinal_summary.json
-```
-
-`data/OpinionQA/distribution/` contains the required
-`<wave>_default_human.csv` files for CEM.
-
 ## Editing Summary
 
 Print editing metrics:
